@@ -10,46 +10,49 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/CaixaEletronico/CaixaEletronico.vhd}
+# vcom -93 -work work {C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:15:42 on Feb 02,2025
-# vcom -reportprogress 300 -93 -work work C:/CaixaEletronico/CaixaEletronico.vhd 
+# Start time: 13:07:43 on Feb 02,2025
+# vcom -reportprogress 300 -93 -work work C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity CaixaEletronico
 # -- Compiling architecture Behavioral of CaixaEletronico
-# End time: 12:15:42 on Feb 02,2025, Elapsed time: 0:00:00
+# End time: 13:07:43 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/CaixaEletronico/tb_CaixaEletronico.vhd}
+# vcom -93 -work work {C:/TrabalhoFinal---LABSD/MaquinaEstados/tb_CaixaEletronico.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:15:42 on Feb 02,2025
-# vcom -reportprogress 300 -93 -work work C:/CaixaEletronico/tb_CaixaEletronico.vhd 
+# Start time: 13:07:43 on Feb 02,2025
+# vcom -reportprogress 300 -93 -work work C:/TrabalhoFinal---LABSD/MaquinaEstados/tb_CaixaEletronico.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity CaixaEletronico_tb
-# -- Compiling architecture tb of CaixaEletronico_tb
-# End time: 12:15:42 on Feb 02,2025, Elapsed time: 0:00:00
+# -- Compiling entity tb_CaixaEletronico
+# -- Compiling architecture tb of tb_CaixaEletronico
+# End time: 13:07:43 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  tb_CaixaEletronico
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" tb_CaixaEletronico 
-# Start time: 12:15:42 on Feb 02,2025
-# ** Error: (vsim-3170) Could not find 'tb_CaixaEletronico'.
-#         Searched libraries:
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/220model
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/sgate
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_mf
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_lnsim
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/cyclonev
-#             C:/CaixaEletronico/simulation/modelsim/rtl_work
-#             C:/CaixaEletronico/simulation/modelsim/rtl_work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./CaixaEletronico_run_msim_rtl_vhdl.do PAUSED at line 12
+# Start time: 13:07:44 on Feb 02,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_caixaeletronico(tb)
+# Loading work.caixaeletronico(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 13:10:59 on Feb 02,2025, Elapsed time: 0:03:15
+# Errors: 0, Warnings: 0

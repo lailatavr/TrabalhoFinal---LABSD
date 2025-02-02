@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity CaixaEletronico_tb is
-end CaixaEletronico_tb;
+entity tb_CaixaEletronico is
+end tb_CaixaEletronico;
 
-architecture tb of CaixaEletronico_tb is
+architecture tb of tb_CaixaEletronico is
     -- Component do DUT (Device Under Test)
     component CaixaEletronico
         Port (
@@ -49,15 +49,15 @@ begin
 
     -- Processo de clock
     process
-    begin
-        while now < 200 ns loop  -- Simula por 200 ns
-            clk_tb <= '0';
-            wait for clk_period / 2;
-            clk_tb <= '1';
-            wait for clk_period / 2;
-        end loop;
-        wait;
-    end process;
+	 begin
+		 while true loop  -- Garante que o clock roda indefinidamente
+			  clk_tb <= '0';
+			  wait for clk_period / 2;
+			  clk_tb <= '1';
+			  wait for clk_period / 2;
+		 end loop;
+		 wait;
+	 end process;
 
     -- Processo de teste
     process
@@ -102,7 +102,7 @@ begin
         wait for 20 ns;
 
         -- Finaliza simulação
-        wait;
+        wait for 1 ms;
     end process;
 
 end tb;

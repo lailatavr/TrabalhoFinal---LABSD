@@ -1,0 +1,131 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity CaixaEletronico_tb is
+-- Entidade sem portas, usada apenas para simulação.
+end CaixaEletronico_tb;
+
+architecture Testbench of CaixaEletronico_tb is
+    -- Component instanciado
+    component CaixaEletronico is
+        Port (
+            clk : in std_logic;
+            reset : in std_logic;
+            confirma_operacao : in std_logic;
+            tipo_operacao : in std_logic_vector(1 downto 0); -- 00: Consulta, 01: Depósito, 10: Saque
+            valor_operacao : in unsigned(15 downto 0);
+            saldo_atual : in unsigned(31 downto 0);
+            saldo_novo : out unsigned(31 downto 0);
+            status : out std_logic;  -- Indica sucesso ou falha na operação
+            estado_atual : out std_logic_vector(2 downto 0) -- Para depuração
+        );
+    end component;
+
+    -- Sinais de estímulo
+    signal clk : std_logic := '0';
+    signal reset : std_logic := '0';
+    signal confirma_operacao : std_logic := '0';
+    signal tipo_operacao : std_logic_vector(1 downto 0) := "00";
+    signal valor_operacao : unsigned(15 downto 0) := (others => '0');
+    signal saldo_atual : unsigned(31 downto 0) := (others => '0');
+    signal saldo_novo : unsigned(31 downto 0);
+    signal status : std_logic;
+    signal estado_atual : std_logic_vector(2 downto 0);
+
+    -- Clock de 10ns
+    constant clk_period : time := 10 ns;
+
+begin
+    -- Instanciação do módulo CaixaEletronico
+    DUT: CaixaEletronico
+        Port map (
+            clk => clk,
+            reset => reset,
+            confirma_operacao => confirma_operacao,
+            tipo_operacao => tipo_operacao,
+            valor_operacao => valor_operacao,
+            saldo_atual => saldo_atual,
+            saldo_novo => saldo_novo,
+            status => status,
+            estado_atual => estado_atual
+        );
+
+    -- Processo do clock
+    clk_process: process
+    begin
+        while true loop
+            clk <= '0';
+            wait for clk_period / 2;
+            clk <= '1';
+            wait for clk_period / 2;
+        end loop;
+    end process;
+
+    -- Processo de estímulos
+    stim_proc: process
+    begin
+        -- Reset inicial
+        reset <= '1';
+        wait for clk_period;
+        reset <= '0';
+        wait for clk_period;
+
+        -- Teste 1: Consulta de saldo inicial
+        saldo_atual <= to_unsigned(500, 32);  -- Saldo inicial
+        tipo_operacao <= "00"; -- Consulta
+        confirma_operacao <= '1';
+        wait for clk_period;
+        confirma_operacao <= '0';
+        wait for 5 * clk_period;
+
+        -- Teste 2: Depósito
+        tipo_operacao <= "01"; -- Depósito
+        valor_operacao <= to_unsigned(200, 16); -- Valor a depositar
+        confirma_operacao <= '1';
+        wait for clk_period;
+        confirma_operacao <= '0';
+        wait for 5 * clk_period;
+
+        -- Consulta de saldo após depósito
+        tipo_operacao <= "00"; -- Consulta
+        confirma_operacao <= '1';
+        wait for clk_period;
+        confirma_operacao <= '0';
+        wait for 5 * clk_period;
+
+        -- Teste 3: Saque com sucesso
+        tipo_operacao <= "10"; -- Saque
+        valor_operacao <= to_unsigned(100, 16); -- Valor a sacar
+        confirma_operacao <= '1';
+        wait for clk_period;
+        confirma_operacao <= '0';
+        wait for 5 * clk_period;
+
+        -- Consulta de saldo após saque bem-sucedido
+        tipo_operacao <= "00"; -- Consulta
+        confirma_operacao <= '1';
+        wait for clk_period;
+        confirma_operacao <= '0';
+        wait for 5 * clk_period;
+
+        -- Teste 4: Saque com saldo insuficiente
+        tipo_operacao <= "10"; -- Saque
+        valor_operacao <= to_unsigned(700, 16); -- Valor maior que o saldo
+        confirma_operacao <= '1';
+        wait for clk_period;
+        confirma_operacao <= '0';
+        wait for 5 * clk_period;
+
+        -- Consulta de saldo após tentativa de saque com erro
+        tipo_operacao <= "00"; -- Consulta
+        confirma_operacao <= '1';
+        wait for clk_period;
+        confirma_operacao <= '0';
+        wait for 5 * clk_period;
+
+        -- Fim da simulação
+        wait;
+    end process;
+
+end Testbench;

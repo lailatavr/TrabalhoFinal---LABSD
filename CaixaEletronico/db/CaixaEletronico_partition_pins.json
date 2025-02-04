@@ -148,10 +148,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "confirma_operacao",
-					"strict" : false
-				},
-				{
 					"name" : "tipo_operacao[1]",
 					"strict" : false
 				},
@@ -225,6 +221,10 @@
 				},
 				{
 					"name" : "senha_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "confirma",
 					"strict" : false
 				},
 				{

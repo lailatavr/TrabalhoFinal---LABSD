@@ -6,7 +6,7 @@ entity CaixaEletronico is
     Port (
         clk : in std_logic;
         reset : in std_logic;
-        confirma_operacao : in std_logic;
+        confirma : in std_logic;
 		  selecao_inicio : in std_logic;
         tipo_operacao : in std_logic_vector(2 downto 0);
         valor_operacao : in unsigned(15 downto 0);
@@ -48,7 +48,9 @@ architecture Behavioral of CaixaEletronico is
 	end component;
 	 
 	type tipo_estado is (MENU_INICIAL, LOGIN, CADASTRAR, ERRO_INICIAL, MENU, CONSULTA_SALDO, DEPOSITO, SAQUE, TRANSFERENCIA, ERRO, LOGOUT);
-	signal estado : tipo_estado; 
+	signal estado : tipo_estado;
+	signal conf_pass : std_logic := '0';
+	signal confirma_operacao : std_logic;
 	
 	--cadastro
 	signal selecao_cadlog : std_logic;
@@ -92,6 +94,15 @@ begin
 			senha_in => in_senha,
 			cadastro_ok => cadastro_ok
 		);
+	
+	-- FlipFlop para que a operação só for confirmada quando o botão for pressionado
+	process(clk)
+	begin
+		if rising_edge(clk) then
+			conf_pass <= confirma;
+			confirma_operacao <= confirma AND (NOT conf_pass);
+		end if;
+   end process;
 		
 	process(clk, reset)
 	begin

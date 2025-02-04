@@ -103,14 +103,14 @@ GND                          : AA3       : gnd    :                   :         
 GND                          : AA4       : gnd    :                   :         :           :                
 AS_DATA2, DATA2              : AA5       :        :                   :         : 3A        :                
 GND                          : AA6       : gnd    :                   :         :           :                
-tipo_operacao[1]             : AA7       : input  : 2.5 V             :         : 3B        : N              
-valor_operacao[12]           : AA8       : input  : 2.5 V             :         : 3B        : N              
-saldo_novo[7]                : AA9       : output : 2.5 V             :         : 3B        : N              
-status                       : AA10      : output : 2.5 V             :         : 3B        : N              
+valor_operacao[8]            : AA7       : input  : 2.5 V             :         : 3B        : N              
+saldo_novo[15]               : AA8       : output : 2.5 V             :         : 3B        : N              
+saldo_novo[12]               : AA9       : output : 2.5 V             :         : 3B        : N              
+saldo_novo[1]                : AA10      : output : 2.5 V             :         : 3B        : N              
 GND                          : AA11      : gnd    :                   :         :           :                
-saldo_novo[1]                : AA12      : output : 2.5 V             :         : 3B        : N              
-login_in[7]                  : AA13      : input  : 2.5 V             :         : 4A        : N              
-senha_in[2]                  : AA14      : input  : 2.5 V             :         : 4A        : N              
+login_in[3]                  : AA12      : input  : 2.5 V             :         : 3B        : N              
+senha_in[1]                  : AA13      : input  : 2.5 V             :         : 4A        : N              
+senha_in[0]                  : AA14      : input  : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA15      :        :                   :         : 4A        :                
 VCCIO4A                      : AA16      : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA17      :        :                   :         : 4A        :                
@@ -123,17 +123,17 @@ GND                          : AB1       : gnd    :                   :         
 GND                          : AB2       : gnd    :                   :         :           :                
 AS_DATA1, DATA1              : AB3       :        :                   :         : 3A        :                
 AS_DATA0, ASDO, DATA0        : AB4       :        :                   :         : 3A        :                
-valor_operacao[11]           : AB5       : input  : 2.5 V             :         : 3B        : N              
-valor_operacao[15]           : AB6       : input  : 2.5 V             :         : 3B        : N              
-saldo_novo[14]               : AB7       : output : 2.5 V             :         : 3B        : N              
-erro_saida                   : AB8       : output : 2.5 V             :         : 3B        : N              
+valor_operacao[1]            : AB5       : input  : 2.5 V             :         : 3B        : N              
+valor_operacao[2]            : AB6       : input  : 2.5 V             :         : 3B        : N              
+valor_operacao[13]           : AB7       : input  : 2.5 V             :         : 3B        : N              
+saldo_novo[13]               : AB8       : output : 2.5 V             :         : 3B        : N              
 GND                          : AB9       : gnd    :                   :         :           :                
-saldo_novo[15]               : AB10      : output : 2.5 V             :         : 3B        : N              
-saldo_novo[5]                : AB11      : output : 2.5 V             :         : 3B        : N              
+senha_in[6]                  : AB10      : input  : 2.5 V             :         : 3B        : N              
+senha_in[7]                  : AB11      : input  : 2.5 V             :         : 3B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB12      :        :                   :         : 4A        :                
-login_in[6]                  : AB13      : input  : 2.5 V             :         : 4A        : N              
+login_in[0]                  : AB13      : input  : 2.5 V             :         : 4A        : N              
 GND                          : AB14      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB15      :        :                   :         : 4A        :                
+login_in[7]                  : AB15      : input  : 2.5 V             :         : 4A        : N              
 VREFB4AN0                    : AB16      : power  :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB17      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB18      :        :                   :         : 4A        :                
@@ -366,10 +366,10 @@ GND                          : M2        : gnd    :                   :         
 VCCH_GXBL                    : M3        : power  :                   : 2.5V    :           :                
 GND                          : M4        : gnd    :                   :         :           :                
 TDO                          : M5        : output :                   :         : 3A        :                
-valor_operacao[7]            : M6        : input  : 2.5 V             :         : 3A        : N              
-valor_operacao[1]            : M7        : input  : 2.5 V             :         : 3A        : N              
-valor_operacao[14]           : M8        : input  : 2.5 V             :         : 3B        : N              
-valor_operacao[13]           : M9        : input  : 2.5 V             :         : 3B        : N              
+valor_operacao[10]           : M6        : input  : 2.5 V             :         : 3A        : N              
+valor_operacao[11]           : M7        : input  : 2.5 V             :         : 3A        : N              
+saldo_novo[2]                : M8        : output : 2.5 V             :         : 3B        : N              
+saldo_novo[5]                : M9        : output : 2.5 V             :         : 3B        : N              
 GND                          : M10       : gnd    :                   :         :           :                
 VCC                          : M11       : power  :                   : 1.1V    :           :                
 GND                          : M12       : gnd    :                   :         :           :                
@@ -388,10 +388,10 @@ GXB_NC                       : N2        :        :                   :         
 GND                          : N3        : gnd    :                   :         :           :                
 VCCE_GXBL                    : N4        : power  :                   : 1.1V    :           :                
 GND                          : N5        : gnd    :                   :         :           :                
-login_in[2]                  : N6        : input  : 2.5 V             :         : 3A        : N              
+tipo_operacao[1]             : N6        : input  : 2.5 V             :         : 3A        : N              
 GND                          : N7        : gnd    :                   :         :           :                
-saldo_novo[2]                : N8        : output : 2.5 V             :         : 3B        : N              
-saldo_novo[0]                : N9        : output : 2.5 V             :         : 3B        : N              
+saldo_novo[14]               : N8        : output : 2.5 V             :         : 3B        : N              
+login_in[5]                  : N9        : input  : 2.5 V             :         : 3B        : N              
 VCC                          : N10       : power  :                   : 1.1V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
 VCC                          : N12       : power  :                   : 1.1V    :           :                
@@ -410,13 +410,13 @@ GND                          : P2        : gnd    :                   :         
 VCCL_GXBL                    : P3        : power  :                   : 1.1V    :           :                
 GND                          : P4        : gnd    :                   :         :           :                
 TMS                          : P5        : input  :                   :         : 3A        :                
-senha_in[7]                  : P6        : input  : 2.5 V             :         : 3A        : N              
-valor_operacao[2]            : P7        : input  : 2.5 V             :         : 3A        : N              
-saldo_novo[9]                : P8        : output : 2.5 V             :         : 3B        : N              
-saldo_novo[13]               : P9        : output : 2.5 V             :         : 3B        : N              
+erro_saida                   : P6        : output : 2.5 V             :         : 3A        : N              
+valor_operacao[5]            : P7        : input  : 2.5 V             :         : 3A        : N              
+saldo_novo[6]                : P8        : output : 2.5 V             :         : 3B        : N              
+login_in[1]                  : P9        : input  : 2.5 V             :         : 3B        : N              
 GND                          : P10       : gnd    :                   :         :           :                
 VCC                          : P11       : power  :                   : 1.1V    :           :                
-tipo_operacao[2]             : P12       : input  : 2.5 V             :         : 3B        : N              
+valor_operacao[12]           : P12       : input  : 2.5 V             :         : 3B        : N              
 VCC                          : P13       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P14       :        :                   :         : 4A        :                
 VCC                          : P15       : power  :                   : 1.1V    :           :                
@@ -431,14 +431,14 @@ GND                          : R1        :        :                   :         
 GND                          : R2        :        :                   :         : B0L       :                
 GND                          : R3        : gnd    :                   :         :           :                
 nCSO, DATA4                  : R4        :        :                   :         : 3A        :                
-login_in[3]                  : R5        : input  : 2.5 V             :         : 3A        : N              
-login_in[4]                  : R6        : input  : 2.5 V             :         : 3A        : N              
-valor_operacao[9]            : R7        : input  : 2.5 V             :         : 3A        : N              
+saldo_novo[4]                : R5        : output : 2.5 V             :         : 3A        : N              
+saldo_novo[10]               : R6        : output : 2.5 V             :         : 3A        : N              
+valor_operacao[15]           : R7        : input  : 2.5 V             :         : 3A        : N              
 VCCIO3B                      : R8        : power  :                   : 2.5V    : 3B        :                
-saldo_novo[4]                : R9        : output : 2.5 V             :         : 3B        : N              
-valor_operacao[3]            : R10       : input  : 2.5 V             :         : 3B        : N              
-saldo_novo[8]                : R11       : output : 2.5 V             :         : 3B        : N              
-valor_operacao[10]           : R12       : input  : 2.5 V             :         : 3B        : N              
+saldo_novo[11]               : R9        : output : 2.5 V             :         : 3B        : N              
+senha_in[4]                  : R10       : input  : 2.5 V             :         : 3B        : N              
+senha_in[5]                  : R11       : input  : 2.5 V             :         : 3B        : N              
+valor_operacao[9]            : R12       : input  : 2.5 V             :         : 3B        : N              
 GND                          : R13       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R15       :        :                   :         : 5A        :                
@@ -455,13 +455,13 @@ VCCH_GXBL                    : T3        : power  :                   : 2.5V    
 AS_DATA3, DATA3              : T4        :        :                   :         : 3A        :                
 VCCA_FPLL                    : T5        : power  :                   : 2.5V    :           :                
 VCCIO3A                      : T6        : power  :                   : 2.5V    : 3A        :                
-valor_operacao[6]            : T7        : input  : 2.5 V             :         : 3A        : N              
-senha_in[6]                  : T8        : input  : 2.5 V             :         : 3A        : N              
-valor_operacao[4]            : T9        : input  : 2.5 V             :         : 3B        : N              
-valor_operacao[8]            : T10       : input  : 2.5 V             :         : 3B        : N              
+tipo_operacao[0]             : T7        : input  : 2.5 V             :         : 3A        : N              
+reset                        : T8        : input  : 2.5 V             :         : 3A        : N              
+saldo_novo[0]                : T9        : output : 2.5 V             :         : 3B        : N              
+saldo_novo[8]                : T10       : output : 2.5 V             :         : 3B        : N              
 VCCIO3B                      : T11       : power  :                   : 2.5V    : 3B        :                
-senha_in[0]                  : T12       : input  : 2.5 V             :         : 4A        : N              
-senha_in[3]                  : T13       : input  : 2.5 V             :         : 4A        : N              
+senha_in[3]                  : T12       : input  : 2.5 V             :         : 4A        : N              
+senha_in[2]                  : T13       : input  : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T14       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 5A        :                
 GND                          : T16       : gnd    :                   :         :           :                
@@ -476,14 +476,14 @@ GXB_NC                       : U2        :        :                   :         
 GND                          : U3        : gnd    :                   :         :           :                
 GND                          : U4        :        :                   :         : B0L       :                
 GND                          : U5        : gnd    :                   :         :           :                
-valor_operacao[0]            : U6        : input  : 2.5 V             :         : 3A        : N              
-login_in[0]                  : U7        : input  : 2.5 V             :         : 3A        : N              
-login_in[1]                  : U8        : input  : 2.5 V             :         : 3A        : N              
+tipo_operacao[2]             : U6        : input  : 2.5 V             :         : 3A        : N              
+valor_operacao[14]           : U7        : input  : 2.5 V             :         : 3A        : N              
+confirma                     : U8        : input  : 2.5 V             :         : 3A        : N              
 GND                          : U9        : gnd    :                   :         :           :                
-confirma_operacao            : U10       : input  : 2.5 V             :         : 3B        : N              
-tipo_operacao[0]             : U11       : input  : 2.5 V             :         : 3B        : N              
-saldo_novo[6]                : U12       : output : 2.5 V             :         : 3B        : N              
-saldo_novo[3]                : U13       : output : 2.5 V             :         : 4A        : N              
+saldo_novo[9]                : U10       : output : 2.5 V             :         : 3B        : N              
+valor_operacao[0]            : U11       : input  : 2.5 V             :         : 3B        : N              
+saldo_novo[7]                : U12       : output : 2.5 V             :         : 3B        : N              
+login_in[2]                  : U13       : input  : 2.5 V             :         : 4A        : N              
 VCCIO4A                      : U14       : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U15       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U16       :        :                   :         : 4A        :                
@@ -498,14 +498,14 @@ GND                          : V2        : gnd    :                   :         
 DCLK                         : V3        :        :                   :         : 3A        :                
 GND                          : V4        :        :                   :         : B0L       :                
 TCK                          : V5        : input  :                   :         : 3A        :                
-senha_in[5]                  : V6        : input  : 2.5 V             :         : 3A        : N              
+valor_operacao[4]            : V6        : input  : 2.5 V             :         : 3A        : N              
 GND                          : V7        : gnd    :                   :         :           :                
 VCCPGM                       : V8        : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
-reset                        : V9        : input  : 2.5 V             :         : 3B        : N              
-valor_operacao[5]            : V10       : input  : 2.5 V             :         : 3B        : N              
+valor_operacao[6]            : V9        : input  : 2.5 V             :         : 3B        : N              
+valor_operacao[7]            : V10       : input  : 2.5 V             :         : 3B        : N              
 DNU                          : V11       :        :                   :         :           :                
 GND                          : V12       : gnd    :                   :         :           :                
-selecao_inicio               : V13       : input  : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V13       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V14       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V15       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V16       :        :                   :         : 4A        :                
@@ -522,8 +522,8 @@ GND                          : W4        : gnd    :                   :         
 TDI                          : W5        : input  :                   :         : 3A        :                
 VCCPD3A                      : W6        : power  :                   : 2.5V    : 3A        :                
 VCC_AUX                      : W7        : power  :                   : 2.5V    :           :                
-senha_in[4]                  : W8        : input  : 2.5 V             :         : 3A        : N              
-login_in[5]                  : W9        : input  : 2.5 V             :         : 3A        : N              
+status                       : W8        : output : 2.5 V             :         : 3A        : N              
+selecao_inicio               : W9        : input  : 2.5 V             :         : 3A        : N              
 VCCIO3B                      : W10       : power  :                   : 2.5V    : 3B        :                
 VCCPD3B4A                    : W11       : power  :                   : 2.5V    : 3B, 4A    :                
 VCCPD3B4A                    : W12       : power  :                   : 2.5V    : 3B, 4A    :                
@@ -545,12 +545,12 @@ GND                          : Y5        : gnd    :                   :         
 DNU                          : Y6        :        :                   :         :           :                
 VREFB3AN0                    : Y7        : power  :                   :         : 3A        :                
 VCCIO3A                      : Y8        : power  :                   : 2.5V    : 3A        :                
-saldo_novo[12]               : Y9        : output : 2.5 V             :         : 3B        : N              
-saldo_novo[10]               : Y10       : output : 2.5 V             :         : 3B        : N              
-saldo_novo[11]               : Y11       : output : 2.5 V             :         : 3B        : N              
+saldo_novo[3]                : Y9        : output : 2.5 V             :         : 3B        : N              
+valor_operacao[3]            : Y10       : input  : 2.5 V             :         : 3B        : N              
+login_in[4]                  : Y11       : input  : 2.5 V             :         : 3B        : N              
 VREFB3BN0                    : Y12       : power  :                   :         : 3B        :                
 VCCIO3B                      : Y13       : power  :                   : 2.5V    : 3B        :                
-senha_in[1]                  : Y14       : input  : 2.5 V             :         : 4A        : N              
+login_in[6]                  : Y14       : input  : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y15       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y16       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y17       :        :                   :         : 4A        :                

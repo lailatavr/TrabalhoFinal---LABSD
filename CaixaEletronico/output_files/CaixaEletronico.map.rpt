@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CaixaEletronico
-Mon Feb 03 23:51:06 2025
+Tue Feb 04 15:48:30 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,115 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |CaixaEletronico|estado
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:0:login_reg
+ 14. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:1:login_reg
+ 15. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:2:login_reg
+ 16. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:3:login_reg
+ 17. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:4:login_reg
+ 18. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:5:login_reg
+ 19. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:6:login_reg
+ 20. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:7:login_reg
+ 21. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:8:login_reg
+ 22. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:9:login_reg
+ 23. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:10:login_reg
+ 24. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:11:login_reg
+ 25. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:12:login_reg
+ 26. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:13:login_reg
+ 27. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:14:login_reg
+ 28. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:15:login_reg
+ 29. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:0:senha_reg
+ 30. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:1:senha_reg
+ 31. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:2:senha_reg
+ 32. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:3:senha_reg
+ 33. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:4:senha_reg
+ 34. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:5:senha_reg
+ 35. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:6:senha_reg
+ 36. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:7:senha_reg
+ 37. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:8:senha_reg
+ 38. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:9:senha_reg
+ 39. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:10:senha_reg
+ 40. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:11:senha_reg
+ 41. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:12:senha_reg
+ 42. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:13:senha_reg
+ 43. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:14:senha_reg
+ 44. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:15:senha_reg
+ 45. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg
+ 46. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg
+ 47. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg
+ 48. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg
+ 49. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg
+ 50. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:5:saldo_reg
+ 51. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:6:saldo_reg
+ 52. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:7:saldo_reg
+ 53. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:8:saldo_reg
+ 54. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:9:saldo_reg
+ 55. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:10:saldo_reg
+ 56. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:11:saldo_reg
+ 57. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:12:saldo_reg
+ 58. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:13:saldo_reg
+ 59. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:14:saldo_reg
+ 60. Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:15:saldo_reg
+ 61. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:0:login_reg
+ 62. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:1:login_reg
+ 63. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:2:login_reg
+ 64. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:3:login_reg
+ 65. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:4:login_reg
+ 66. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:5:login_reg
+ 67. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:6:login_reg
+ 68. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:7:login_reg
+ 69. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:8:login_reg
+ 70. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:9:login_reg
+ 71. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:10:login_reg
+ 72. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:11:login_reg
+ 73. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:12:login_reg
+ 74. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:13:login_reg
+ 75. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:14:login_reg
+ 76. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:15:login_reg
+ 77. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:0:senha_reg
+ 78. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:1:senha_reg
+ 79. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:2:senha_reg
+ 80. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:3:senha_reg
+ 81. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:4:senha_reg
+ 82. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:5:senha_reg
+ 83. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:6:senha_reg
+ 84. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:7:senha_reg
+ 85. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:8:senha_reg
+ 86. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:9:senha_reg
+ 87. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:10:senha_reg
+ 88. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:11:senha_reg
+ 89. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:12:senha_reg
+ 90. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:13:senha_reg
+ 91. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:14:senha_reg
+ 92. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:15:senha_reg
+ 93. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg
+ 94. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg
+ 95. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg
+ 96. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg
+ 97. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg
+ 98. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:5:saldo_reg
+ 99. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:6:saldo_reg
+100. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:7:saldo_reg
+101. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:8:saldo_reg
+102. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:9:saldo_reg
+103. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:10:saldo_reg
+104. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:11:saldo_reg
+105. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:12:saldo_reg
+106. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:13:saldo_reg
+107. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:14:saldo_reg
+108. Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:15:saldo_reg
+109. Port Connectivity Checks: "Cadastro:cadastro_inst|memoria:mem_inst"
+110. Port Connectivity Checks: "Cadastro:cadastro_inst"
+111. Post-Synthesis Netlist Statistics for Top Partition
+112. Elapsed Time Per Partition
+113. Analysis & Synthesis Messages
 
 
 
@@ -34,22 +142,27 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Feb 03 23:51:06 2025           ;
-; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name               ; CaixaEletronico                             ;
-; Top-level Entity Name       ; CaixaEletronico                             ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Feb 04 15:48:30 2025       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; CaixaEletronico                             ;
+; Top-level Entity Name           ; CaixaEletronico                             ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 29                                          ;
+; Total pins                      ; 57                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -60,6 +173,7 @@ https://fpgasoftware.intel.com/eula.
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
 ; Top-level entity name                                                           ; CaixaEletronico    ; CaixaEletronico    ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation                             ; 10                 ;                    ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
@@ -148,11 +262,1443 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-10        ;   0.0%      ;
 +----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                        ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------+---------+
+; Reg.vhd                          ; yes             ; User VHDL File  ; C:/TrabalhoFinal---LABSD/CaixaEletronico/Reg.vhd             ;         ;
+; CaixaEletronico.vhd              ; yes             ; User VHDL File  ; C:/TrabalhoFinal---LABSD/CaixaEletronico/CaixaEletronico.vhd ;         ;
+; Memoria.vhd                      ; yes             ; User VHDL File  ; C:/TrabalhoFinal---LABSD/CaixaEletronico/Memoria.vhd         ;         ;
+; cadastro.vhd                     ; yes             ; User VHDL File  ; C:/TrabalhoFinal---LABSD/CaixaEletronico/cadastro.vhd        ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 35        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 61        ;
+;     -- 7 input functions                    ; 1         ;
+;     -- 6 input functions                    ; 7         ;
+;     -- 5 input functions                    ; 9         ;
+;     -- 4 input functions                    ; 8         ;
+;     -- <=3 input functions                  ; 36        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 29        ;
+;                                             ;           ;
+; I/O pins                                    ; 57        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 29        ;
+; Total fan-out                               ; 408       ;
+; Average fan-out                             ; 2.00      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
+; |CaixaEletronico           ; 61 (61)             ; 29 (29)                   ; 0                 ; 0          ; 57   ; 0            ; |CaixaEletronico    ; CaixaEletronico ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |CaixaEletronico|estado                                                                                                                                                                                         ;
++-----------------------+---------------+-------------+----------------------+--------------+-----------------+-----------------------+-------------+---------------------+------------------+--------------+---------------------+
+; Name                  ; estado.LOGOUT ; estado.ERRO ; estado.TRANSFERENCIA ; estado.SAQUE ; estado.DEPOSITO ; estado.CONSULTA_SALDO ; estado.MENU ; estado.ERRO_INICIAL ; estado.CADASTRAR ; estado.LOGIN ; estado.MENU_INICIAL ;
++-----------------------+---------------+-------------+----------------------+--------------+-----------------+-----------------------+-------------+---------------------+------------------+--------------+---------------------+
+; estado.MENU_INICIAL   ; 0             ; 0           ; 0                    ; 0            ; 0               ; 0                     ; 0           ; 0                   ; 0                ; 0            ; 0                   ;
+; estado.LOGIN          ; 0             ; 0           ; 0                    ; 0            ; 0               ; 0                     ; 0           ; 0                   ; 0                ; 1            ; 1                   ;
+; estado.CADASTRAR      ; 0             ; 0           ; 0                    ; 0            ; 0               ; 0                     ; 0           ; 0                   ; 1                ; 0            ; 1                   ;
+; estado.ERRO_INICIAL   ; 0             ; 0           ; 0                    ; 0            ; 0               ; 0                     ; 0           ; 1                   ; 0                ; 0            ; 1                   ;
+; estado.MENU           ; 0             ; 0           ; 0                    ; 0            ; 0               ; 0                     ; 1           ; 0                   ; 0                ; 0            ; 1                   ;
+; estado.CONSULTA_SALDO ; 0             ; 0           ; 0                    ; 0            ; 0               ; 1                     ; 0           ; 0                   ; 0                ; 0            ; 1                   ;
+; estado.DEPOSITO       ; 0             ; 0           ; 0                    ; 0            ; 1               ; 0                     ; 0           ; 0                   ; 0                ; 0            ; 1                   ;
+; estado.SAQUE          ; 0             ; 0           ; 0                    ; 1            ; 0               ; 0                     ; 0           ; 0                   ; 0                ; 0            ; 1                   ;
+; estado.TRANSFERENCIA  ; 0             ; 0           ; 1                    ; 0            ; 0               ; 0                     ; 0           ; 0                   ; 0                ; 0            ; 1                   ;
+; estado.ERRO           ; 0             ; 1           ; 0                    ; 0            ; 0               ; 0                     ; 0           ; 0                   ; 0                ; 0            ; 1                   ;
+; estado.LOGOUT         ; 1             ; 0           ; 0                    ; 0            ; 0               ; 0                     ; 0           ; 0                   ; 0                ; 0            ; 1                   ;
++-----------------------+---------------+-------------+----------------------+--------------+-----------------+-----------------------+-------------+---------------------+------------------+--------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                  ;
++-------------------------------------------------------+---------------------------------------------+
+; Register name                                         ; Reason for Removal                          ;
++-------------------------------------------------------+---------------------------------------------+
+; read_client_id[1..3]                                  ; Stuck at GND due to stuck port data_in      ;
+; write_client_id[1..3]                                 ; Stuck at GND due to stuck port data_in      ;
+; memoria:mem_inst|Reg:\gen_saldo:15:saldo_reg|Q[0..15] ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:14:saldo_reg|Q[0..15] ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:13:saldo_reg|Q[0..15] ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:12:saldo_reg|Q[0..15] ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:11:saldo_reg|Q[0..15] ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:10:saldo_reg|Q[0..15] ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:9:saldo_reg|Q[0..15]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:8:saldo_reg|Q[0..15]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:7:saldo_reg|Q[0..15]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:6:saldo_reg|Q[0..15]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:5:saldo_reg|Q[0..15]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[0..15]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[0..15]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[0..15]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:15:senha_reg|Q[0..7]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:14:senha_reg|Q[0..7]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:13:senha_reg|Q[0..7]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:12:senha_reg|Q[0..7]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:11:senha_reg|Q[0..7]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:10:senha_reg|Q[0..7]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:9:senha_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:8:senha_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:7:senha_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:6:senha_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:5:senha_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:4:senha_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:3:senha_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_senha:2:senha_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:15:login_reg|Q[0..7]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:14:login_reg|Q[0..7]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:13:login_reg|Q[0..7]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:12:login_reg|Q[0..7]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:11:login_reg|Q[0..7]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:10:login_reg|Q[0..7]  ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:9:login_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:8:login_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:7:login_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:6:login_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:5:login_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:4:login_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:3:login_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|Reg:\gen_login:2:login_reg|Q[0..7]   ; Lost fanout                                 ;
+; memoria:mem_inst|saldo_mem_load[2..15]                ; Lost fanout                                 ;
+; memoria:mem_inst|senha_mem_load[2..15]                ; Lost fanout                                 ;
+; memoria:mem_inst|login_mem_load[2..15]                ; Lost fanout                                 ;
+; write_client_id[0]                                    ; Lost fanout                                 ;
+; memoria:mem_inst|login_mem_load[0,1]                  ; Stuck at GND due to stuck port data_in      ;
+; memoria:mem_inst|senha_mem_load[0,1]                  ; Stuck at GND due to stuck port data_in      ;
+; memoria:mem_inst|saldo_mem_load[0,1]                  ; Stuck at GND due to stuck port data_in      ;
+; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[7]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[7]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[6]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[6]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[5]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[5]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[4]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[4]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[3]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[3]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[2]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[2]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[1]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[1]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[0]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[0]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[7]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[7]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[6]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[6]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[5]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[5]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[4]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[4]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[3]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[3]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[2]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[2]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[1]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[1]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[0]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[0]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[15]     ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[15]     ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[14]     ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[14]     ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[13]     ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[13]     ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[12]     ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[12]     ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[11]     ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[11]     ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[10]     ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[10]     ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[9]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[9]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[8]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[8]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[7]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[7]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[6]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[6]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[5]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[5]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[4]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[4]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[3]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[3]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[2]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[2]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[1]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[1]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[0]      ; Stuck at GND due to stuck port clock_enable ;
+; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[0]      ; Stuck at GND due to stuck port clock_enable ;
+; read_client_id[0]                                     ; Lost fanout                                 ;
+; Cadastro:cadastro_inst|cadastro_ok                    ; Stuck at GND due to stuck port data_in      ;
+; Total Number of Removed Registers = 569               ;                                             ;
++-------------------------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                              ;
++----------------------------------------------------+---------------------------+-------------------------------------------------------------------------+
+; Register name                                      ; Reason for Removal        ; Registers Removed due to This Register                                  ;
++----------------------------------------------------+---------------------------+-------------------------------------------------------------------------+
+; read_client_id[3]                                  ; Stuck at GND              ; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[15],                      ;
+;                                                    ; due to stuck port data_in ; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[10],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[9],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[8],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[7],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg|Q[0],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[15],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[10],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[9],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[8],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[7],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg|Q[0],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[15],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[10],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[9],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[8],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[7],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg|Q[0],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:4:senha_reg|Q[7],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:4:senha_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:4:senha_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:4:senha_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:4:senha_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:4:senha_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:4:senha_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:4:senha_reg|Q[0],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:3:senha_reg|Q[7],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:3:senha_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:3:senha_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:3:senha_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:3:senha_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:3:senha_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:3:senha_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:3:senha_reg|Q[0],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:2:senha_reg|Q[7],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:2:senha_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:2:senha_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:2:senha_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:2:senha_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:2:senha_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:2:senha_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:2:senha_reg|Q[0],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:4:login_reg|Q[7],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:4:login_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:4:login_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:4:login_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:4:login_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:4:login_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:4:login_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:4:login_reg|Q[0],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:3:login_reg|Q[7],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:3:login_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:3:login_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:3:login_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:3:login_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:3:login_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:3:login_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:3:login_reg|Q[0],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:2:login_reg|Q[7],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:2:login_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:2:login_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:2:login_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:2:login_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:2:login_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:2:login_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:2:login_reg|Q[0],                       ;
+;                                                    ;                           ; memoria:mem_inst|saldo_mem_load[2], memoria:mem_inst|saldo_mem_load[3], ;
+;                                                    ;                           ; memoria:mem_inst|saldo_mem_load[4], memoria:mem_inst|senha_mem_load[2], ;
+;                                                    ;                           ; memoria:mem_inst|senha_mem_load[3], memoria:mem_inst|senha_mem_load[4], ;
+;                                                    ;                           ; memoria:mem_inst|login_mem_load[2], memoria:mem_inst|login_mem_load[3], ;
+;                                                    ;                           ; memoria:mem_inst|login_mem_load[4], read_client_id[0]                   ;
+; memoria:mem_inst|saldo_mem_load[1]                 ; Stuck at GND              ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[15],                      ;
+;                                                    ; due to stuck port data_in ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[14],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[13],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[12],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[11],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[10],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[9],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[8],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[7],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg|Q[0]                        ;
+; memoria:mem_inst|saldo_mem_load[0]                 ; Stuck at GND              ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[15],                      ;
+;                                                    ; due to stuck port data_in ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[14],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[13],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[12],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[11],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[10],                      ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[9],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[8],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[7],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg|Q[0]                        ;
+; memoria:mem_inst|login_mem_load[0]                 ; Stuck at GND              ; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[7],                       ;
+;                                                    ; due to stuck port data_in ; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:0:login_reg|Q[0]                        ;
+; memoria:mem_inst|login_mem_load[1]                 ; Stuck at GND              ; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[7],                       ;
+;                                                    ; due to stuck port data_in ; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_login:1:login_reg|Q[0]                        ;
+; memoria:mem_inst|senha_mem_load[0]                 ; Stuck at GND              ; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[7],                       ;
+;                                                    ; due to stuck port data_in ; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:0:senha_reg|Q[0]                        ;
+; memoria:mem_inst|senha_mem_load[1]                 ; Stuck at GND              ; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[7],                       ;
+;                                                    ; due to stuck port data_in ; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[6],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[5],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[4],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[3],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[2],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[1],                       ;
+;                                                    ;                           ; memoria:mem_inst|Reg:\gen_senha:1:senha_reg|Q[0]                        ;
+; write_client_id[3]                                 ; Stuck at GND              ; memoria:mem_inst|saldo_mem_load[8], memoria:mem_inst|senha_mem_load[8], ;
+;                                                    ; due to stuck port data_in ; memoria:mem_inst|login_mem_load[8], write_client_id[0]                  ;
+; memoria:mem_inst|Reg:\gen_saldo:11:saldo_reg|Q[15] ; Lost Fanouts              ; memoria:mem_inst|saldo_mem_load[11]                                     ;
+; memoria:mem_inst|Reg:\gen_saldo:10:saldo_reg|Q[15] ; Lost Fanouts              ; memoria:mem_inst|saldo_mem_load[10]                                     ;
+; memoria:mem_inst|Reg:\gen_saldo:9:saldo_reg|Q[15]  ; Lost Fanouts              ; memoria:mem_inst|saldo_mem_load[9]                                      ;
+; memoria:mem_inst|Reg:\gen_saldo:7:saldo_reg|Q[15]  ; Lost Fanouts              ; memoria:mem_inst|saldo_mem_load[7]                                      ;
+; memoria:mem_inst|Reg:\gen_saldo:6:saldo_reg|Q[15]  ; Lost Fanouts              ; memoria:mem_inst|saldo_mem_load[6]                                      ;
+; memoria:mem_inst|Reg:\gen_saldo:5:saldo_reg|Q[15]  ; Lost Fanouts              ; memoria:mem_inst|saldo_mem_load[5]                                      ;
+; memoria:mem_inst|Reg:\gen_senha:15:senha_reg|Q[7]  ; Lost Fanouts              ; memoria:mem_inst|senha_mem_load[15]                                     ;
+; memoria:mem_inst|Reg:\gen_senha:14:senha_reg|Q[7]  ; Lost Fanouts              ; memoria:mem_inst|senha_mem_load[14]                                     ;
+; memoria:mem_inst|Reg:\gen_senha:13:senha_reg|Q[7]  ; Lost Fanouts              ; memoria:mem_inst|senha_mem_load[13]                                     ;
+; memoria:mem_inst|Reg:\gen_senha:12:senha_reg|Q[7]  ; Lost Fanouts              ; memoria:mem_inst|senha_mem_load[12]                                     ;
+; memoria:mem_inst|Reg:\gen_senha:11:senha_reg|Q[7]  ; Lost Fanouts              ; memoria:mem_inst|senha_mem_load[11]                                     ;
+; memoria:mem_inst|Reg:\gen_senha:10:senha_reg|Q[7]  ; Lost Fanouts              ; memoria:mem_inst|senha_mem_load[10]                                     ;
+; memoria:mem_inst|Reg:\gen_senha:9:senha_reg|Q[7]   ; Lost Fanouts              ; memoria:mem_inst|senha_mem_load[9]                                      ;
+; memoria:mem_inst|Reg:\gen_senha:5:senha_reg|Q[7]   ; Lost Fanouts              ; memoria:mem_inst|senha_mem_load[5]                                      ;
+; memoria:mem_inst|Reg:\gen_login:15:login_reg|Q[7]  ; Lost Fanouts              ; memoria:mem_inst|login_mem_load[15]                                     ;
+; memoria:mem_inst|Reg:\gen_login:14:login_reg|Q[7]  ; Lost Fanouts              ; memoria:mem_inst|login_mem_load[14]                                     ;
+; memoria:mem_inst|Reg:\gen_login:13:login_reg|Q[7]  ; Lost Fanouts              ; memoria:mem_inst|login_mem_load[13]                                     ;
+; memoria:mem_inst|Reg:\gen_login:12:login_reg|Q[7]  ; Lost Fanouts              ; memoria:mem_inst|login_mem_load[12]                                     ;
+; memoria:mem_inst|Reg:\gen_login:11:login_reg|Q[7]  ; Lost Fanouts              ; memoria:mem_inst|login_mem_load[11]                                     ;
+; memoria:mem_inst|Reg:\gen_login:10:login_reg|Q[7]  ; Lost Fanouts              ; memoria:mem_inst|login_mem_load[10]                                     ;
+; memoria:mem_inst|Reg:\gen_login:9:login_reg|Q[7]   ; Lost Fanouts              ; memoria:mem_inst|login_mem_load[9]                                      ;
+; memoria:mem_inst|Reg:\gen_login:7:login_reg|Q[7]   ; Lost Fanouts              ; memoria:mem_inst|login_mem_load[7]                                      ;
+; memoria:mem_inst|Reg:\gen_login:6:login_reg|Q[7]   ; Lost Fanouts              ; memoria:mem_inst|login_mem_load[6]                                      ;
+; memoria:mem_inst|Reg:\gen_login:5:login_reg|Q[7]   ; Lost Fanouts              ; memoria:mem_inst|login_mem_load[5]                                      ;
+; memoria:mem_inst|Reg:\gen_saldo:15:saldo_reg|Q[15] ; Lost Fanouts              ; memoria:mem_inst|saldo_mem_load[15]                                     ;
+; memoria:mem_inst|Reg:\gen_saldo:14:saldo_reg|Q[15] ; Lost Fanouts              ; memoria:mem_inst|saldo_mem_load[14]                                     ;
+; memoria:mem_inst|Reg:\gen_saldo:13:saldo_reg|Q[15] ; Lost Fanouts              ; memoria:mem_inst|saldo_mem_load[13]                                     ;
+; memoria:mem_inst|Reg:\gen_saldo:12:saldo_reg|Q[15] ; Lost Fanouts              ; memoria:mem_inst|saldo_mem_load[12]                                     ;
+; memoria:mem_inst|Reg:\gen_senha:6:senha_reg|Q[7]   ; Lost Fanouts              ; memoria:mem_inst|senha_mem_load[6]                                      ;
+; memoria:mem_inst|Reg:\gen_senha:7:senha_reg|Q[7]   ; Lost Fanouts              ; memoria:mem_inst|senha_mem_load[7]                                      ;
++----------------------------------------------------+---------------------------+-------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 29    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 16    ;
+; Number of registers using Asynchronous Clear ; 29    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |CaixaEletronico|memoria:mem_inst|login_mem_load[0] ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |CaixaEletronico|saldo_novo[5]~reg0                 ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; No         ; |CaixaEletronico|Selector11                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:0:login_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:1:login_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:2:login_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:3:login_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:4:login_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:5:login_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:6:login_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:7:login_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:8:login_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:9:login_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:10:login_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:11:login_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:12:login_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:13:login_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:14:login_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_login:15:login_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:0:senha_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:1:senha_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:2:senha_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:3:senha_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:4:senha_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:5:senha_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:6:senha_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:7:senha_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:8:senha_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:9:senha_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:10:senha_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:11:senha_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:12:senha_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:13:senha_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:14:senha_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_senha:15:senha_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:5:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:6:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:7:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:8:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:9:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:10:saldo_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:11:saldo_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:12:saldo_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:13:saldo_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:14:saldo_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoria:mem_inst|Reg:\gen_saldo:15:saldo_reg ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:0:login_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:1:login_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:2:login_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:3:login_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:4:login_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:5:login_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:6:login_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:7:login_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:8:login_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:9:login_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:10:login_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:11:login_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:12:login_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:13:login_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:14:login_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_login:15:login_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:0:senha_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:1:senha_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:2:senha_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:3:senha_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:4:senha_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:5:senha_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:6:senha_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:7:senha_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:8:senha_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:9:senha_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:10:senha_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:11:senha_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:12:senha_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:13:senha_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:14:senha_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_senha:15:senha_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:1:saldo_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:2:saldo_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:3:saldo_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:4:saldo_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:5:saldo_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:6:saldo_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:7:saldo_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:8:saldo_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:9:saldo_reg ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:10:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:11:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:12:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:13:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:14:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Cadastro:cadastro_inst|memoria:mem_inst|Reg:\gen_saldo:15:saldo_reg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Cadastro:cadastro_inst|memoria:mem_inst"                                                   ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; read_client ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saldo_in    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; login_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; senha_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; saldo_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "Cadastro:cadastro_inst" ;
++------------+-------+----------+--------------------+
+; Port       ; Type  ; Severity ; Details            ;
++------------+-------+----------+--------------------+
+; cliente_id ; Input ; Info     ; Stuck at GND       ;
++------------+-------+----------+--------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 29                          ;
+;     CLR               ; 13                          ;
+;     ENA CLR SLD       ; 16                          ;
+; arriav_lcell_comb     ; 61                          ;
+;     arith             ; 16                          ;
+;         1 data inputs ; 16                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 44                          ;
+;         2 data inputs ; 19                          ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 8                           ;
+;         5 data inputs ; 9                           ;
+;         6 data inputs ; 7                           ;
+; boundary_port         ; 57                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.50                        ;
+; Average LUT depth     ; 1.61                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -161,38 +1707,49 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Feb 03 23:50:57 2025
+    Info: Processing started: Tue Feb 04 15:48:20 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CaixaEletronico -c CaixaEletronico
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (20032): Parallel compilation is enabled and will use up to 10 processors
 Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
-    Info (12022): Found design unit 1: Reg-Behavioral File: C:/TrabalhoFinal---LABSD/MaquinaEstados/Reg.vhd Line: 18
-    Info (12023): Found entity 1: Reg File: C:/TrabalhoFinal---LABSD/MaquinaEstados/Reg.vhd Line: 5
+    Info (12022): Found design unit 1: Reg-Behavioral File: C:/TrabalhoFinal---LABSD/CaixaEletronico/Reg.vhd Line: 18
+    Info (12023): Found entity 1: Reg File: C:/TrabalhoFinal---LABSD/CaixaEletronico/Reg.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file caixaeletronico.vhd
-    Info (12022): Found design unit 1: CaixaEletronico-Behavioral File: C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd Line: 22
-    Info (12023): Found entity 1: CaixaEletronico File: C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd Line: 5
+    Info (12022): Found design unit 1: CaixaEletronico-Behavioral File: C:/TrabalhoFinal---LABSD/CaixaEletronico/CaixaEletronico.vhd Line: 21
+    Info (12023): Found entity 1: CaixaEletronico File: C:/TrabalhoFinal---LABSD/CaixaEletronico/CaixaEletronico.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file tb_caixaeletronico.vhd
-    Info (12022): Found design unit 1: tb_CaixaEletronico-tb File: C:/TrabalhoFinal---LABSD/MaquinaEstados/tb_CaixaEletronico.vhd Line: 8
-    Info (12023): Found entity 1: tb_CaixaEletronico File: C:/TrabalhoFinal---LABSD/MaquinaEstados/tb_CaixaEletronico.vhd Line: 5
+    Info (12022): Found design unit 1: tb_CaixaEletronico-tb File: C:/TrabalhoFinal---LABSD/CaixaEletronico/tb_CaixaEletronico.vhd Line: 8
+    Info (12023): Found entity 1: tb_CaixaEletronico File: C:/TrabalhoFinal---LABSD/CaixaEletronico/tb_CaixaEletronico.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoria.vhd
-    Info (12022): Found design unit 1: memoria-Behavioral File: C:/TrabalhoFinal---LABSD/MaquinaEstados/Memoria.vhd Line: 21
-    Info (12023): Found entity 1: memoria File: C:/TrabalhoFinal---LABSD/MaquinaEstados/Memoria.vhd Line: 5
+    Info (12022): Found design unit 1: memoria-Behavioral File: C:/TrabalhoFinal---LABSD/CaixaEletronico/Memoria.vhd Line: 21
+    Info (12023): Found entity 1: memoria File: C:/TrabalhoFinal---LABSD/CaixaEletronico/Memoria.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file cadastro.vhd
-    Info (12022): Found design unit 1: Cadastro-Behavioral File: C:/TrabalhoFinal---LABSD/MaquinaEstados/cadastro.vhd Line: 17
-    Info (12023): Found entity 1: Cadastro File: C:/TrabalhoFinal---LABSD/MaquinaEstados/cadastro.vhd Line: 5
-Error (10349): VHDL Association List error at CaixaEletronico.vhd(67): formal "reset" does not exist File: C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd Line: 67
-Error (10346): VHDL error at CaixaEletronico.vhd(64): formal port or parameter "read_en" must have actual or default value File: C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd Line: 64
-Error (10784): HDL error at CaixaEletronico.vhd(26): see declaration for object "read_en" File: C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd Line: 26
-Error (10346): VHDL error at CaixaEletronico.vhd(64): formal port or parameter "write_en" must have actual or default value File: C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd Line: 64
-Error (10784): HDL error at CaixaEletronico.vhd(27): see declaration for object "write_en" File: C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd Line: 27
-Error (10346): VHDL error at CaixaEletronico.vhd(64): formal port or parameter "login" must have actual or default value File: C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd Line: 64
-Error (10784): HDL error at CaixaEletronico.vhd(28): see declaration for object "login" File: C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd Line: 28
-Error (10346): VHDL error at CaixaEletronico.vhd(64): formal port or parameter "senha" must have actual or default value File: C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd Line: 64
-Error (10784): HDL error at CaixaEletronico.vhd(29): see declaration for object "senha" File: C:/TrabalhoFinal---LABSD/MaquinaEstados/CaixaEletronico.vhd Line: 29
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 9 errors, 1 warning
-    Error: Peak virtual memory: 4830 megabytes
-    Error: Processing ended: Mon Feb 03 23:51:06 2025
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:20
+    Info (12022): Found design unit 1: Cadastro-Behavioral File: C:/TrabalhoFinal---LABSD/CaixaEletronico/cadastro.vhd Line: 17
+    Info (12023): Found entity 1: Cadastro File: C:/TrabalhoFinal---LABSD/CaixaEletronico/cadastro.vhd Line: 5
+Info (12127): Elaborating entity "CaixaEletronico" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at CaixaEletronico.vhd(54): used implicit default value for signal "selecao_cadlog" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/TrabalhoFinal---LABSD/CaixaEletronico/CaixaEletronico.vhd Line: 54
+Warning (10541): VHDL Signal Declaration warning at CaixaEletronico.vhd(55): used implicit default value for signal "client_id" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/TrabalhoFinal---LABSD/CaixaEletronico/CaixaEletronico.vhd Line: 55
+Warning (10541): VHDL Signal Declaration warning at CaixaEletronico.vhd(56): used implicit default value for signal "in_login" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/TrabalhoFinal---LABSD/CaixaEletronico/CaixaEletronico.vhd Line: 56
+Warning (10541): VHDL Signal Declaration warning at CaixaEletronico.vhd(57): used implicit default value for signal "in_senha" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/TrabalhoFinal---LABSD/CaixaEletronico/CaixaEletronico.vhd Line: 57
+Warning (10541): VHDL Signal Declaration warning at CaixaEletronico.vhd(60): used implicit default value for signal "write_signal" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/TrabalhoFinal---LABSD/CaixaEletronico/CaixaEletronico.vhd Line: 60
+Warning (10541): VHDL Signal Declaration warning at CaixaEletronico.vhd(63): used implicit default value for signal "saldo_signal" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/TrabalhoFinal---LABSD/CaixaEletronico/CaixaEletronico.vhd Line: 63
+Info (12128): Elaborating entity "memoria" for hierarchy "memoria:mem_inst" File: C:/TrabalhoFinal---LABSD/CaixaEletronico/CaixaEletronico.vhd Line: 70
+Info (12128): Elaborating entity "Reg" for hierarchy "memoria:mem_inst|Reg:\gen_login:0:login_reg" File: C:/TrabalhoFinal---LABSD/CaixaEletronico/Memoria.vhd Line: 50
+Info (12128): Elaborating entity "Reg" for hierarchy "memoria:mem_inst|Reg:\gen_saldo:0:saldo_reg" File: C:/TrabalhoFinal---LABSD/CaixaEletronico/Memoria.vhd Line: 78
+Info (12128): Elaborating entity "Cadastro" for hierarchy "Cadastro:cadastro_inst" File: C:/TrabalhoFinal---LABSD/CaixaEletronico/CaixaEletronico.vhd Line: 85
+Warning (10540): VHDL Signal Declaration warning at cadastro.vhd(36): used explicit default value for signal "saldo_in" because signal was never assigned a value File: C:/TrabalhoFinal---LABSD/CaixaEletronico/cadastro.vhd Line: 36
+Warning (10540): VHDL Signal Declaration warning at cadastro.vhd(37): used explicit default value for signal "read_cliente" because signal was never assigned a value File: C:/TrabalhoFinal---LABSD/CaixaEletronico/cadastro.vhd Line: 37
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 492 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 118 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 39 input pins
+    Info (21059): Implemented 18 output pins
+    Info (21061): Implemented 61 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4895 megabytes
+    Info: Processing ended: Tue Feb 04 15:48:30 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:20
 
 

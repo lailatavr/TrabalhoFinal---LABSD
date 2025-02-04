@@ -12,7 +12,6 @@ entity CaixaEletronico is
         valor_operacao : in unsigned(15 downto 0);
 		  login_in : in std_logic_vector(7 downto 0);
 		  senha_in : in std_logic_vector(7 downto 0);
-        --saldo_atual : in unsigned(15 downto 0);
         saldo_novo : out unsigned(15 downto 0);
         status : out std_logic;
 		  erro_saida : out std_logic
@@ -22,22 +21,29 @@ end CaixaEletronico;
 architecture Behavioral of CaixaEletronico is
 	component Memoria is 
 		Port (
-			clk :in std_logic;
-			read_en :in std_logic;
-			write_en : in std_logic;
-			login : in std_logic_vector (7 downto 0);
-			senha : in std_logic_vector (7 downto 0);
-			saldo : out unsigned (15 downto 0)
+        clk           : in std_logic; 
+        reset         : in std_logic; 
+        write         : in std_logic; 
+        read_client   : in integer range 0 to 15; 
+        write_client  : in integer range 0 to 15;
+        login_in      : in std_logic_vector(7 downto 0);
+        senha_in      : in std_logic_vector(7 downto 0);
+        saldo_in      : in std_logic_vector(15 downto 0);
+        login_out     : out std_logic_vector(7 downto 0); 
+        senha_out     : out std_logic_vector(7 downto 0);
+        saldo_out     : out std_logic_vector(15 downto 0)
 		);
 	end component;
 	 
 	component Cadastro is
 		Port (
-			clk : in std_logic;
-			write_en : in std_logic;
-			login : in std_logic_vector (7 downto 0);
-			senha : in std_logic_vector (7 downto 0);
-			status : out std_logic
+        clk          : in std_logic; 
+        reset        : in std_logic; 
+        iniciar      : in std_logic;  
+        cliente_id   : in integer range 0 to 15; 
+        login_in     : in std_logic_vector(7 downto 0); 
+        senha_in     : in std_logic_vector(7 downto 0); 
+        cadastro_ok  : out std_logic
 		);
 	end component;
 	 
@@ -49,7 +55,7 @@ architecture Behavioral of CaixaEletronico is
 	signal client_id : integer range 0 to 15;
 	signal in_login : std_logic_vector(7 downto 0);
 	signal in_senha : std_logic_vector(7 downto 0);
-	signal status_sig : std_logic;
+	signal cadastro_ok : std_logic;
 	--memória
 	signal write_signal : std_logic;
 	signal read_client_id : integer range 0 to 15;
@@ -84,7 +90,7 @@ begin
 			cliente_id => client_id,
 			login_in => in_login,
 			senha_in => in_senha,
-			cadastro_ok => status_sig
+			cadastro_ok => cadastro_ok
 		);
 		
 	process(clk, reset)
@@ -108,7 +114,7 @@ begin
 							
 				when LOGIN =>
 					if confirma_operacao = '1' then
-						read_mem <= '1';
+						read_client_id <= 1;
 						if login_mem = login_in and senha_mem = senha_in then
 							estado <= MENU;
 						else
@@ -118,8 +124,8 @@ begin
 						
 				when CADASTRAR =>
 					if confirma_operacao = '1' then
-						write_mem <= '1';
-						if cadastro_status = '1' then
+						write_client_id <= 1;
+						if cadastro_ok = '1' then
 							estado <= LOGIN;
 						else
 							estado <= ERRO_INICIAL;
@@ -146,21 +152,21 @@ begin
 					end if;
 
 				when CONSULTA_SALDO =>
-					saldo_novo <= saldo_mem; 
+					saldo_novo <= unsigned(saldo_novo_sig); 
 					status <= '1';
 					estado <= MENU;           
 
 				when DEPOSITO =>
-					saldo_novo <= saldo_mem + valor_operacao;
+					saldo_novo <= unsigned(saldo_novo_sig) + valor_operacao;
 					status <= '1';
 					estado <= MENU;
 
 				when SAQUE =>
-					if  saldo_mem >= valor_operacao then
-						saldo_novo <= saldo_mem - valor_operacao;
+					if  unsigned(saldo_novo_sig) >= valor_operacao then
+						saldo_novo <= unsigned(saldo_novo_sig) - valor_operacao;
 						status <= '1'; 
 					else
-						saldo_novo <= saldo_mem;
+						saldo_novo <= unsigned(saldo_novo_sig);
 						status <= '0';
 						estado <= ERRO;
 					end if;

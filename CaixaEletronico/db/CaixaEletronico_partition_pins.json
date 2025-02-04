@@ -72,39 +72,11 @@
 					"strict" : false
 				},
 				{
+					"name" : "erro_saida",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "saldo_atual[0]",
-					"strict" : false
-				},
-				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
-					"name" : "valor_operacao[15]",
-					"strict" : false
-				},
-				{
-					"name" : "saldo_atual[15]",
-					"strict" : false
-				},
-				{
-					"name" : "valor_operacao[3]",
-					"strict" : false
-				},
-				{
-					"name" : "saldo_atual[3]",
-					"strict" : false
-				},
-				{
-					"name" : "valor_operacao[2]",
-					"strict" : false
-				},
-				{
-					"name" : "saldo_atual[2]",
 					"strict" : false
 				},
 				{
@@ -112,11 +84,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "valor_operacao[1]",
-					"strict" : false
-				},
-				{
-					"name" : "saldo_atual[1]",
+					"name" : "reset",
 					"strict" : false
 				},
 				{
@@ -124,23 +92,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "saldo_atual[5]",
+					"name" : "valor_operacao[11]",
 					"strict" : false
 				},
 				{
-					"name" : "valor_operacao[7]",
+					"name" : "valor_operacao[1]",
 					"strict" : false
 				},
 				{
-					"name" : "saldo_atual[7]",
+					"name" : "valor_operacao[2]",
 					"strict" : false
 				},
 				{
-					"name" : "valor_operacao[6]",
-					"strict" : false
-				},
-				{
-					"name" : "saldo_atual[6]",
+					"name" : "valor_operacao[3]",
 					"strict" : false
 				},
 				{
@@ -148,55 +112,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "saldo_atual[4]",
+					"name" : "valor_operacao[6]",
 					"strict" : false
 				},
 				{
-					"name" : "valor_operacao[14]",
-					"strict" : false
-				},
-				{
-					"name" : "saldo_atual[14]",
-					"strict" : false
-				},
-				{
-					"name" : "valor_operacao[13]",
-					"strict" : false
-				},
-				{
-					"name" : "saldo_atual[13]",
-					"strict" : false
-				},
-				{
-					"name" : "valor_operacao[12]",
-					"strict" : false
-				},
-				{
-					"name" : "saldo_atual[12]",
-					"strict" : false
-				},
-				{
-					"name" : "valor_operacao[11]",
-					"strict" : false
-				},
-				{
-					"name" : "saldo_atual[11]",
-					"strict" : false
-				},
-				{
-					"name" : "valor_operacao[9]",
-					"strict" : false
-				},
-				{
-					"name" : "saldo_atual[9]",
-					"strict" : false
-				},
-				{
-					"name" : "valor_operacao[10]",
-					"strict" : false
-				},
-				{
-					"name" : "saldo_atual[10]",
+					"name" : "valor_operacao[7]",
 					"strict" : false
 				},
 				{
@@ -204,7 +124,31 @@
 					"strict" : false
 				},
 				{
-					"name" : "saldo_atual[8]",
+					"name" : "valor_operacao[9]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_operacao[10]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_operacao[12]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_operacao[13]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_operacao[14]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_operacao[15]",
+					"strict" : false
+				},
+				{
+					"name" : "confirma_operacao",
 					"strict" : false
 				},
 				{
@@ -216,7 +160,75 @@
 					"strict" : false
 				},
 				{
-					"name" : "confirma_operacao",
+					"name" : "tipo_operacao[2]",
+					"strict" : false
+				},
+				{
+					"name" : "senha_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "senha_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "senha_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "senha_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "login_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "login_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "login_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "login_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "login_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "login_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "login_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "login_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "senha_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "senha_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "senha_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "senha_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "selecao_inicio",
 					"strict" : false
 				}
 			]

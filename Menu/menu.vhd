@@ -7,7 +7,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity menu is
     Port ( clk : in STD_LOGIC;
            reset : in STD_LOGIC;
-           select : in STD_LOGIC_VECTOR (1 downto 0);
+           sel : in STD_LOGIC_VECTOR (1 downto 0);
            option : out STD_LOGIC_VECTOR (1 downto 0));
 end menu;
 
@@ -18,7 +18,7 @@ begin
         if reset = '1' then
             option <= "00"; -- Estado inicial
         elsif rising_edge(clk) then
-            case select is
+            case sel is
                 when "00" => option <= "00"; -- Menu principal
                 when "01" => option <= "01"; -- Saque
                 when "10" => option <= "10"; -- Depósito

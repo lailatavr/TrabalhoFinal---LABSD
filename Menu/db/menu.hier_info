@@ -1,0 +1,11 @@
+|menu
+clk => option[0]~reg0.CLK
+clk => option[1]~reg0.CLK
+reset => option[0]~reg0.ACLR
+reset => option[1]~reg0.ACLR
+sel[0] => option[0]~reg0.DATAIN
+sel[1] => option[1]~reg0.DATAIN
+option[0] <= option[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+option[1] <= option[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

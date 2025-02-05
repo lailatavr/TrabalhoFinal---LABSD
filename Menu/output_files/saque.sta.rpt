@@ -1,0 +1,1902 @@
+TimeQuest Timing Analyzer report for saque
+Tue Feb 04 22:53:52 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Setup: 'clk'
+ 13. Slow 1200mV 85C Model Hold: 'clk'
+ 14. Slow 1200mV 85C Model Recovery: 'clk'
+ 15. Slow 1200mV 85C Model Removal: 'clk'
+ 16. Slow 1200mV 85C Model Minimum Pulse Width: 'clk'
+ 17. Slow 1200mV 85C Model Minimum Pulse Width: 'reset'
+ 18. Setup Times
+ 19. Hold Times
+ 20. Clock to Output Times
+ 21. Minimum Clock to Output Times
+ 22. Propagation Delay
+ 23. Minimum Propagation Delay
+ 24. Slow 1200mV 85C Model Metastability Report
+ 25. Slow 1200mV 0C Model Fmax Summary
+ 26. Slow 1200mV 0C Model Setup Summary
+ 27. Slow 1200mV 0C Model Hold Summary
+ 28. Slow 1200mV 0C Model Recovery Summary
+ 29. Slow 1200mV 0C Model Removal Summary
+ 30. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 31. Slow 1200mV 0C Model Setup: 'clk'
+ 32. Slow 1200mV 0C Model Hold: 'clk'
+ 33. Slow 1200mV 0C Model Recovery: 'clk'
+ 34. Slow 1200mV 0C Model Removal: 'clk'
+ 35. Slow 1200mV 0C Model Minimum Pulse Width: 'clk'
+ 36. Slow 1200mV 0C Model Minimum Pulse Width: 'reset'
+ 37. Setup Times
+ 38. Hold Times
+ 39. Clock to Output Times
+ 40. Minimum Clock to Output Times
+ 41. Propagation Delay
+ 42. Minimum Propagation Delay
+ 43. Slow 1200mV 0C Model Metastability Report
+ 44. Fast 1200mV 0C Model Setup Summary
+ 45. Fast 1200mV 0C Model Hold Summary
+ 46. Fast 1200mV 0C Model Recovery Summary
+ 47. Fast 1200mV 0C Model Removal Summary
+ 48. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 49. Fast 1200mV 0C Model Setup: 'clk'
+ 50. Fast 1200mV 0C Model Hold: 'clk'
+ 51. Fast 1200mV 0C Model Recovery: 'clk'
+ 52. Fast 1200mV 0C Model Removal: 'clk'
+ 53. Fast 1200mV 0C Model Minimum Pulse Width: 'clk'
+ 54. Fast 1200mV 0C Model Minimum Pulse Width: 'reset'
+ 55. Setup Times
+ 56. Hold Times
+ 57. Clock to Output Times
+ 58. Minimum Clock to Output Times
+ 59. Propagation Delay
+ 60. Minimum Propagation Delay
+ 61. Fast 1200mV 0C Model Metastability Report
+ 62. Multicorner Timing Analysis Summary
+ 63. Setup Times
+ 64. Hold Times
+ 65. Clock to Output Times
+ 66. Minimum Clock to Output Times
+ 67. Progagation Delay
+ 68. Minimum Progagation Delay
+ 69. Board Trace Model Assignments
+ 70. Input Transition Times
+ 71. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 72. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 73. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 74. Setup Transfers
+ 75. Hold Transfers
+ 76. Recovery Transfers
+ 77. Removal Transfers
+ 78. Report TCCS
+ 79. Report RSKM
+ 80. Unconstrained Paths
+ 81. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; saque                                                             ;
+; Device Family      ; Cyclone IV GX                                                     ;
+; Device Name        ; EP4CGX15BF14C6                                                    ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Enabled                                                           ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }   ;
+; reset      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { reset } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; clk   ; -0.130 ; -0.959             ;
++-------+--------+--------------------+
+
+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clk   ; 0.673 ; 0.000              ;
++-------+-------+--------------------+
+
+
++----------------------------------------+
+; Slow 1200mV 85C Model Recovery Summary ;
++-------+-------+------------------------+
+; Clock ; Slack ; End Point TNS          ;
++-------+-------+------------------------+
+; clk   ; 0.096 ; 0.000                  ;
++-------+-------+------------------------+
+
+
++---------------------------------------+
+; Slow 1200mV 85C Model Removal Summary ;
++-------+--------+----------------------+
+; Clock ; Slack  ; End Point TNS        ;
++-------+--------+----------------------+
+; clk   ; -0.129 ; -1.156               ;
++-------+--------+----------------------+
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; clk   ; -3.000 ; -12.000                          ;
+; reset ; -3.000 ; -3.000                           ;
++-------+--------+----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'clk'                                                                                            ;
++--------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; -0.130 ; novo_saldo[6]~25 ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.170     ; 0.435      ;
+; -0.129 ; novo_saldo[5]~21 ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.169     ; 0.435      ;
+; -0.120 ; novo_saldo[1]~5  ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.171     ; 0.424      ;
+; -0.118 ; novo_saldo[4]~17 ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.172     ; 0.421      ;
+; -0.117 ; novo_saldo[2]~9  ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.169     ; 0.423      ;
+; -0.115 ; novo_saldo[0]~1  ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.168     ; 0.422      ;
+; -0.115 ; novo_saldo[3]~13 ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.168     ; 0.422      ;
+; -0.115 ; novo_saldo[7]~29 ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.168     ; 0.422      ;
++--------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'clk'                                                                                            ;
++-------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; 0.673 ; novo_saldo[2]~9  ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.009     ; 0.361      ;
+; 0.680 ; novo_saldo[0]~1  ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.008     ; 0.369      ;
+; 0.680 ; novo_saldo[3]~13 ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.008     ; 0.369      ;
+; 0.680 ; novo_saldo[7]~29 ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.008     ; 0.369      ;
+; 0.682 ; novo_saldo[4]~17 ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.011     ; 0.368      ;
+; 0.684 ; novo_saldo[1]~5  ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.011     ; 0.370      ;
+; 0.688 ; novo_saldo[5]~21 ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.008     ; 0.377      ;
+; 0.691 ; novo_saldo[6]~25 ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.010     ; 0.378      ;
++-------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Recovery: 'clk'                                                                                 ;
++-------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; 0.096 ; reset     ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.257      ; 2.636      ;
+; 0.096 ; reset     ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.257      ; 2.636      ;
+; 0.096 ; reset     ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.257      ; 2.636      ;
+; 0.096 ; reset     ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.257      ; 2.636      ;
+; 0.097 ; reset     ; saque_concluido~reg0        ; reset        ; clk         ; 0.500        ; 2.257      ; 2.635      ;
+; 0.097 ; reset     ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.257      ; 2.635      ;
+; 0.097 ; reset     ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.257      ; 2.635      ;
+; 0.097 ; reset     ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.257      ; 2.635      ;
+; 0.097 ; reset     ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.257      ; 2.635      ;
+; 0.730 ; reset     ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.257      ; 2.502      ;
+; 0.730 ; reset     ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.257      ; 2.502      ;
+; 0.730 ; reset     ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.257      ; 2.502      ;
+; 0.730 ; reset     ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.257      ; 2.502      ;
+; 0.731 ; reset     ; saque_concluido~reg0        ; reset        ; clk         ; 1.000        ; 2.257      ; 2.501      ;
+; 0.731 ; reset     ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.257      ; 2.501      ;
+; 0.731 ; reset     ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.257      ; 2.501      ;
+; 0.731 ; reset     ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.257      ; 2.501      ;
+; 0.731 ; reset     ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.257      ; 2.501      ;
++-------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Removal: 'clk'                                                                                   ;
++--------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; -0.129 ; reset     ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.348      ; 2.416      ;
+; -0.129 ; reset     ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.348      ; 2.416      ;
+; -0.129 ; reset     ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.348      ; 2.416      ;
+; -0.129 ; reset     ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.348      ; 2.416      ;
+; -0.128 ; reset     ; saque_concluido~reg0        ; reset        ; clk         ; 0.000        ; 2.347      ; 2.416      ;
+; -0.128 ; reset     ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.347      ; 2.416      ;
+; -0.128 ; reset     ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.347      ; 2.416      ;
+; -0.128 ; reset     ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.347      ; 2.416      ;
+; -0.128 ; reset     ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.347      ; 2.416      ;
+; 0.503  ; reset     ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.348      ; 2.548      ;
+; 0.503  ; reset     ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.348      ; 2.548      ;
+; 0.503  ; reset     ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.348      ; 2.548      ;
+; 0.503  ; reset     ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.348      ; 2.548      ;
+; 0.504  ; reset     ; saque_concluido~reg0        ; reset        ; clk         ; -0.500       ; 2.347      ; 2.548      ;
+; 0.504  ; reset     ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.347      ; 2.548      ;
+; 0.504  ; reset     ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.347      ; 2.548      ;
+; 0.504  ; reset     ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.347      ; 2.548      ;
+; 0.504  ; reset     ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.347      ; 2.548      ;
++--------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width: 'clk'                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                          ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; clk   ; Rise       ; clk                             ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; saque_concluido~reg0            ;
+; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated     ;
+; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated     ;
+; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated     ;
+; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated     ;
+; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated     ;
+; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated     ;
+; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated     ;
+; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated     ;
+; 0.214  ; 0.398        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; saque_concluido~reg0            ;
+; 0.326  ; 0.326        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~input|o                     ;
+; 0.337  ; 0.337        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~inputclkctrl|inclk[0]       ;
+; 0.337  ; 0.337        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~inputclkctrl|outclk         ;
+; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated|clk ;
+; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated|clk ;
+; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated|clk ;
+; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated|clk ;
+; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated|clk ;
+; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated|clk ;
+; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated|clk ;
+; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated|clk ;
+; 0.374  ; 0.374        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saque_concluido~reg0|clk        ;
+; 0.385  ; 0.601        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated     ;
+; 0.385  ; 0.601        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated     ;
+; 0.385  ; 0.601        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated     ;
+; 0.385  ; 0.601        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated     ;
+; 0.385  ; 0.601        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated     ;
+; 0.385  ; 0.601        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated     ;
+; 0.385  ; 0.601        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated     ;
+; 0.385  ; 0.601        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated     ;
+; 0.385  ; 0.601        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; saque_concluido~reg0            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~input|i                     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~input|i                     ;
+; 0.623  ; 0.623        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated|clk ;
+; 0.623  ; 0.623        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated|clk ;
+; 0.623  ; 0.623        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated|clk ;
+; 0.623  ; 0.623        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated|clk ;
+; 0.623  ; 0.623        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated|clk ;
+; 0.623  ; 0.623        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated|clk ;
+; 0.623  ; 0.623        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated|clk ;
+; 0.623  ; 0.623        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated|clk ;
+; 0.623  ; 0.623        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saque_concluido~reg0|clk        ;
+; 0.662  ; 0.662        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~inputclkctrl|inclk[0]       ;
+; 0.662  ; 0.662        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~inputclkctrl|outclk         ;
+; 0.674  ; 0.674        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~input|o                     ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width: 'reset'                                                           ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                      ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; reset ; Rise       ; reset                       ;
+; 0.326  ; 0.326        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; reset~input|o               ;
+; 0.337  ; 0.337        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; reset~inputclkctrl|inclk[0] ;
+; 0.337  ; 0.337        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; reset~inputclkctrl|outclk   ;
+; 0.353  ; 0.353        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[1]~5|datad       ;
+; 0.354  ; 0.354        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[3]~13|datad      ;
+; 0.354  ; 0.354        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[4]~17|datad      ;
+; 0.354  ; 0.354        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[5]~21|datad      ;
+; 0.355  ; 0.355        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[0]~1|datad       ;
+; 0.355  ; 0.355        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[2]~9|datad       ;
+; 0.355  ; 0.355        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[6]~25|datad      ;
+; 0.355  ; 0.355        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[7]~29|datad      ;
+; 0.373  ; 0.373        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[1]~5             ;
+; 0.374  ; 0.374        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[3]~13            ;
+; 0.374  ; 0.374        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[4]~17            ;
+; 0.374  ; 0.374        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[5]~21            ;
+; 0.375  ; 0.375        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[0]~1             ;
+; 0.375  ; 0.375        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[2]~9             ;
+; 0.375  ; 0.375        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[6]~25            ;
+; 0.375  ; 0.375        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[7]~29            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reset ; Rise       ; reset~input|i               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; reset~input|i               ;
+; 0.624  ; 0.624        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[0]~1             ;
+; 0.624  ; 0.624        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[1]~5             ;
+; 0.624  ; 0.624        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[2]~9             ;
+; 0.624  ; 0.624        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[3]~13            ;
+; 0.624  ; 0.624        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[5]~21            ;
+; 0.624  ; 0.624        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[6]~25            ;
+; 0.624  ; 0.624        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[7]~29            ;
+; 0.625  ; 0.625        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[4]~17            ;
+; 0.644  ; 0.644        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[0]~1|datad       ;
+; 0.644  ; 0.644        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[1]~5|datad       ;
+; 0.644  ; 0.644        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[2]~9|datad       ;
+; 0.644  ; 0.644        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[3]~13|datad      ;
+; 0.644  ; 0.644        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[5]~21|datad      ;
+; 0.644  ; 0.644        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[6]~25|datad      ;
+; 0.644  ; 0.644        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[7]~29|datad      ;
+; 0.645  ; 0.645        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[4]~17|datad      ;
+; 0.662  ; 0.662        ; 0.000          ; High Pulse Width ; reset ; Rise       ; reset~inputclkctrl|inclk[0] ;
+; 0.662  ; 0.662        ; 0.000          ; High Pulse Width ; reset ; Rise       ; reset~inputclkctrl|outclk   ;
+; 0.674  ; 0.674        ; 0.000          ; High Pulse Width ; reset ; Rise       ; reset~input|o               ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Setup Times                                                                 ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; iniciar_saque   ; clk        ; 3.465 ; 3.967 ; Rise       ; clk             ;
+; saldo_atual[*]  ; clk        ; 5.123 ; 5.832 ; Rise       ; clk             ;
+;  saldo_atual[0] ; clk        ; 5.123 ; 5.832 ; Rise       ; clk             ;
+;  saldo_atual[1] ; clk        ; 4.991 ; 5.396 ; Rise       ; clk             ;
+;  saldo_atual[2] ; clk        ; 4.360 ; 4.989 ; Rise       ; clk             ;
+;  saldo_atual[3] ; clk        ; 4.822 ; 5.221 ; Rise       ; clk             ;
+;  saldo_atual[4] ; clk        ; 4.442 ; 5.071 ; Rise       ; clk             ;
+;  saldo_atual[5] ; clk        ; 4.515 ; 4.925 ; Rise       ; clk             ;
+;  saldo_atual[6] ; clk        ; 4.162 ; 4.790 ; Rise       ; clk             ;
+;  saldo_atual[7] ; clk        ; 4.025 ; 4.420 ; Rise       ; clk             ;
+; valor_saque[*]  ; clk        ; 5.219 ; 5.532 ; Rise       ; clk             ;
+;  valor_saque[0] ; clk        ; 5.219 ; 5.532 ; Rise       ; clk             ;
+;  valor_saque[1] ; clk        ; 4.526 ; 5.000 ; Rise       ; clk             ;
+;  valor_saque[2] ; clk        ; 4.972 ; 5.275 ; Rise       ; clk             ;
+;  valor_saque[3] ; clk        ; 2.659 ; 2.795 ; Rise       ; clk             ;
+;  valor_saque[4] ; clk        ; 2.646 ; 2.550 ; Rise       ; clk             ;
+;  valor_saque[5] ; clk        ; 4.532 ; 5.015 ; Rise       ; clk             ;
+;  valor_saque[6] ; clk        ; 4.577 ; 4.882 ; Rise       ; clk             ;
+;  valor_saque[7] ; clk        ; 3.581 ; 3.996 ; Rise       ; clk             ;
+; saldo_atual[*]  ; reset      ; 2.984 ; 3.444 ; Fall       ; reset           ;
+;  saldo_atual[0] ; reset      ; 2.931 ; 3.444 ; Fall       ; reset           ;
+;  saldo_atual[1] ; reset      ; 2.984 ; 3.401 ; Fall       ; reset           ;
+;  saldo_atual[2] ; reset      ; 2.495 ; 2.914 ; Fall       ; reset           ;
+;  saldo_atual[3] ; reset      ; 2.947 ; 3.381 ; Fall       ; reset           ;
+;  saldo_atual[4] ; reset      ; 2.688 ; 3.125 ; Fall       ; reset           ;
+;  saldo_atual[5] ; reset      ; 2.772 ; 3.210 ; Fall       ; reset           ;
+;  saldo_atual[6] ; reset      ; 2.537 ; 2.973 ; Fall       ; reset           ;
+;  saldo_atual[7] ; reset      ; 2.705 ; 3.127 ; Fall       ; reset           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Hold Times                                                                    ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; iniciar_saque   ; clk        ; -2.723 ; -3.224 ; Rise       ; clk             ;
+; saldo_atual[*]  ; clk        ; -2.100 ; -2.521 ; Rise       ; clk             ;
+;  saldo_atual[0] ; clk        ; -2.709 ; -3.184 ; Rise       ; clk             ;
+;  saldo_atual[1] ; clk        ; -2.618 ; -3.043 ; Rise       ; clk             ;
+;  saldo_atual[2] ; clk        ; -2.178 ; -2.610 ; Rise       ; clk             ;
+;  saldo_atual[3] ; clk        ; -2.664 ; -3.067 ; Rise       ; clk             ;
+;  saldo_atual[4] ; clk        ; -2.321 ; -2.749 ; Rise       ; clk             ;
+;  saldo_atual[5] ; clk        ; -2.387 ; -2.816 ; Rise       ; clk             ;
+;  saldo_atual[6] ; clk        ; -2.100 ; -2.521 ; Rise       ; clk             ;
+;  saldo_atual[7] ; clk        ; -2.423 ; -2.797 ; Rise       ; clk             ;
+; valor_saque[*]  ; clk        ; -0.438 ; -0.532 ; Rise       ; clk             ;
+;  valor_saque[0] ; clk        ; -2.637 ; -3.105 ; Rise       ; clk             ;
+;  valor_saque[1] ; clk        ; -2.183 ; -2.598 ; Rise       ; clk             ;
+;  valor_saque[2] ; clk        ; -2.607 ; -3.086 ; Rise       ; clk             ;
+;  valor_saque[3] ; clk        ; -0.599 ; -0.675 ; Rise       ; clk             ;
+;  valor_saque[4] ; clk        ; -0.438 ; -0.532 ; Rise       ; clk             ;
+;  valor_saque[5] ; clk        ; -2.411 ; -2.835 ; Rise       ; clk             ;
+;  valor_saque[6] ; clk        ; -2.338 ; -2.812 ; Rise       ; clk             ;
+;  valor_saque[7] ; clk        ; -2.056 ; -2.469 ; Rise       ; clk             ;
+; saldo_atual[*]  ; reset      ; -1.503 ; -1.901 ; Fall       ; reset           ;
+;  saldo_atual[0] ; reset      ; -1.947 ; -2.435 ; Fall       ; reset           ;
+;  saldo_atual[1] ; reset      ; -1.993 ; -2.390 ; Fall       ; reset           ;
+;  saldo_atual[2] ; reset      ; -1.503 ; -1.901 ; Fall       ; reset           ;
+;  saldo_atual[3] ; reset      ; -1.962 ; -2.370 ; Fall       ; reset           ;
+;  saldo_atual[4] ; reset      ; -1.712 ; -2.123 ; Fall       ; reset           ;
+;  saldo_atual[5] ; reset      ; -1.759 ; -2.174 ; Fall       ; reset           ;
+;  saldo_atual[6] ; reset      ; -1.532 ; -1.941 ; Fall       ; reset           ;
+;  saldo_atual[7] ; reset      ; -1.729 ; -2.131 ; Fall       ; reset           ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Clock to Output Times                                                       ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; novo_saldo[*]   ; clk        ; 8.638 ; 8.654 ; Rise       ; clk             ;
+;  novo_saldo[0]  ; clk        ; 8.638 ; 8.654 ; Rise       ; clk             ;
+;  novo_saldo[1]  ; clk        ; 6.928 ; 6.782 ; Rise       ; clk             ;
+;  novo_saldo[2]  ; clk        ; 6.487 ; 6.336 ; Rise       ; clk             ;
+;  novo_saldo[3]  ; clk        ; 7.845 ; 7.782 ; Rise       ; clk             ;
+;  novo_saldo[4]  ; clk        ; 7.353 ; 7.312 ; Rise       ; clk             ;
+;  novo_saldo[5]  ; clk        ; 7.168 ; 7.098 ; Rise       ; clk             ;
+;  novo_saldo[6]  ; clk        ; 6.369 ; 6.224 ; Rise       ; clk             ;
+;  novo_saldo[7]  ; clk        ; 6.894 ; 6.853 ; Rise       ; clk             ;
+; saque_concluido ; clk        ; 5.601 ; 5.523 ; Rise       ; clk             ;
+; novo_saldo[*]   ; reset      ; 7.242 ; 7.182 ; Rise       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 7.242 ; 7.182 ; Rise       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 5.315 ; 5.211 ; Rise       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 5.332 ; 5.148 ; Rise       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 6.182 ; 6.171 ; Rise       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 6.239 ; 6.102 ; Rise       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 5.939 ; 5.920 ; Rise       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 5.184 ; 5.088 ; Rise       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 5.771 ; 5.646 ; Rise       ; reset           ;
+; novo_saldo[*]   ; reset      ; 8.318 ; 8.339 ; Fall       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 8.318 ; 8.339 ; Fall       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 6.767 ; 6.626 ; Fall       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 6.409 ; 6.309 ; Fall       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 7.620 ; 7.577 ; Fall       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 7.493 ; 7.444 ; Fall       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 7.524 ; 7.479 ; Fall       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 6.707 ; 6.569 ; Fall       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 7.391 ; 7.323 ; Fall       ; reset           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; novo_saldo[*]   ; clk        ; 6.116 ; 5.981 ; Rise       ; clk             ;
+;  novo_saldo[0]  ; clk        ; 8.280 ; 8.286 ; Rise       ; clk             ;
+;  novo_saldo[1]  ; clk        ; 6.579 ; 6.471 ; Rise       ; clk             ;
+;  novo_saldo[2]  ; clk        ; 6.222 ; 6.081 ; Rise       ; clk             ;
+;  novo_saldo[3]  ; clk        ; 7.429 ; 7.418 ; Rise       ; clk             ;
+;  novo_saldo[4]  ; clk        ; 7.051 ; 6.976 ; Rise       ; clk             ;
+;  novo_saldo[5]  ; clk        ; 6.857 ; 6.794 ; Rise       ; clk             ;
+;  novo_saldo[6]  ; clk        ; 6.116 ; 5.981 ; Rise       ; clk             ;
+;  novo_saldo[7]  ; clk        ; 6.650 ; 6.577 ; Rise       ; clk             ;
+; saque_concluido ; clk        ; 5.422 ; 5.343 ; Rise       ; clk             ;
+; novo_saldo[*]   ; reset      ; 4.826 ; 4.718 ; Rise       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 6.799 ; 6.848 ; Rise       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 4.997 ; 4.861 ; Rise       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 4.932 ; 4.818 ; Rise       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 5.826 ; 5.782 ; Rise       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 5.778 ; 5.767 ; Rise       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 5.532 ; 5.494 ; Rise       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 4.826 ; 4.718 ; Rise       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 5.387 ; 5.373 ; Rise       ; reset           ;
+; novo_saldo[*]   ; reset      ; 4.826 ; 4.718 ; Fall       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 6.799 ; 6.848 ; Fall       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 4.997 ; 4.861 ; Fall       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 4.932 ; 4.818 ; Fall       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 5.826 ; 5.782 ; Fall       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 5.778 ; 5.767 ; Fall       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 5.532 ; 5.494 ; Fall       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 4.826 ; 4.718 ; Fall       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 5.387 ; 5.373 ; Fall       ; reset           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++----------------+---------------+-------+----+----+--------+
+; Input Port     ; Output Port   ; RR    ; RF ; FR ; FF     ;
++----------------+---------------+-------+----+----+--------+
+; saldo_atual[0] ; novo_saldo[0] ; 9.651 ;    ;    ; 10.138 ;
+; saldo_atual[1] ; novo_saldo[1] ; 7.961 ;    ;    ; 8.222  ;
+; saldo_atual[2] ; novo_saldo[2] ; 7.413 ;    ;    ; 7.689  ;
+; saldo_atual[3] ; novo_saldo[3] ; 8.779 ;    ;    ; 9.155  ;
+; saldo_atual[4] ; novo_saldo[4] ; 8.403 ;    ;    ; 8.748  ;
+; saldo_atual[5] ; novo_saldo[5] ; 8.436 ;    ;    ; 8.846  ;
+; saldo_atual[6] ; novo_saldo[6] ; 7.451 ;    ;    ; 7.781  ;
+; saldo_atual[7] ; novo_saldo[7] ; 7.963 ;    ;    ; 8.291  ;
++----------------+---------------+-------+----+----+--------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++----------------+---------------+-------+----+----+-------+
+; Input Port     ; Output Port   ; RR    ; RF ; FR ; FF    ;
++----------------+---------------+-------+----+----+-------+
+; saldo_atual[0] ; novo_saldo[0] ; 9.345 ;    ;    ; 9.818 ;
+; saldo_atual[1] ; novo_saldo[1] ; 7.693 ;    ;    ; 7.944 ;
+; saldo_atual[2] ; novo_saldo[2] ; 7.161 ;    ;    ; 7.429 ;
+; saldo_atual[3] ; novo_saldo[3] ; 8.475 ;    ;    ; 8.840 ;
+; saldo_atual[4] ; novo_saldo[4] ; 8.109 ;    ;    ; 8.442 ;
+; saldo_atual[5] ; novo_saldo[5] ; 8.090 ;    ;    ; 8.478 ;
+; saldo_atual[6] ; novo_saldo[6] ; 7.154 ;    ;    ; 7.461 ;
+; saldo_atual[7] ; novo_saldo[7] ; 7.724 ;    ;    ; 8.043 ;
++----------------+---------------+-------+----+----+-------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clk   ; -0.065 ; -0.439            ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clk   ; 0.645 ; 0.000             ;
++-------+-------+-------------------+
+
+
++---------------------------------------+
+; Slow 1200mV 0C Model Recovery Summary ;
++-------+-------+-----------------------+
+; Clock ; Slack ; End Point TNS         ;
++-------+-------+-----------------------+
+; clk   ; 0.130 ; 0.000                 ;
++-------+-------+-----------------------+
+
+
++--------------------------------------+
+; Slow 1200mV 0C Model Removal Summary ;
++-------+--------+---------------------+
+; Clock ; Slack  ; End Point TNS       ;
++-------+--------+---------------------+
+; clk   ; -0.131 ; -1.179              ;
++-------+--------+---------------------+
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clk   ; -3.000 ; -12.000                         ;
+; reset ; -3.000 ; -3.000                          ;
++-------+--------+---------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'clk'                                                                                             ;
++--------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; -0.065 ; novo_saldo[6]~25 ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.148     ; 0.392      ;
+; -0.063 ; novo_saldo[5]~21 ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.146     ; 0.392      ;
+; -0.055 ; novo_saldo[1]~5  ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.148     ; 0.382      ;
+; -0.053 ; novo_saldo[4]~17 ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.149     ; 0.379      ;
+; -0.052 ; novo_saldo[2]~9  ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.147     ; 0.380      ;
+; -0.051 ; novo_saldo[0]~1  ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.146     ; 0.380      ;
+; -0.050 ; novo_saldo[3]~13 ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.145     ; 0.380      ;
+; -0.050 ; novo_saldo[7]~29 ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.146     ; 0.379      ;
++--------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'clk'                                                                                             ;
++-------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; 0.645 ; novo_saldo[2]~9  ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.007     ; 0.322      ;
+; 0.649 ; novo_saldo[0]~1  ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.005     ; 0.328      ;
+; 0.649 ; novo_saldo[3]~13 ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.005     ; 0.328      ;
+; 0.649 ; novo_saldo[7]~29 ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.005     ; 0.328      ;
+; 0.651 ; novo_saldo[4]~17 ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.008     ; 0.327      ;
+; 0.653 ; novo_saldo[1]~5  ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.008     ; 0.329      ;
+; 0.657 ; novo_saldo[5]~21 ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.005     ; 0.336      ;
+; 0.660 ; novo_saldo[6]~25 ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.007     ; 0.337      ;
++-------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Recovery: 'clk'                                                                                  ;
++-------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; 0.130 ; reset     ; saque_concluido~reg0        ; reset        ; clk         ; 0.500        ; 2.041      ; 2.386      ;
+; 0.130 ; reset     ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.041      ; 2.386      ;
+; 0.130 ; reset     ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.042      ; 2.387      ;
+; 0.130 ; reset     ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.041      ; 2.386      ;
+; 0.130 ; reset     ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.042      ; 2.387      ;
+; 0.130 ; reset     ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.042      ; 2.387      ;
+; 0.130 ; reset     ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.042      ; 2.387      ;
+; 0.130 ; reset     ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.041      ; 2.386      ;
+; 0.130 ; reset     ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; 0.500        ; 2.041      ; 2.386      ;
+; 0.765 ; reset     ; saque_concluido~reg0        ; reset        ; clk         ; 1.000        ; 2.041      ; 2.251      ;
+; 0.765 ; reset     ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.041      ; 2.251      ;
+; 0.765 ; reset     ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.042      ; 2.252      ;
+; 0.765 ; reset     ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.041      ; 2.251      ;
+; 0.765 ; reset     ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.042      ; 2.252      ;
+; 0.765 ; reset     ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.042      ; 2.252      ;
+; 0.765 ; reset     ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.042      ; 2.252      ;
+; 0.765 ; reset     ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.041      ; 2.251      ;
+; 0.765 ; reset     ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; 1.000        ; 2.041      ; 2.251      ;
++-------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Removal: 'clk'                                                                                    ;
++--------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; -0.131 ; reset     ; saque_concluido~reg0        ; reset        ; clk         ; 0.000        ; 2.121      ; 2.174      ;
+; -0.131 ; reset     ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.121      ; 2.174      ;
+; -0.131 ; reset     ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.122      ; 2.175      ;
+; -0.131 ; reset     ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.121      ; 2.174      ;
+; -0.131 ; reset     ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.122      ; 2.175      ;
+; -0.131 ; reset     ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.122      ; 2.175      ;
+; -0.131 ; reset     ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.122      ; 2.175      ;
+; -0.131 ; reset     ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.121      ; 2.174      ;
+; -0.131 ; reset     ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; 0.000        ; 2.121      ; 2.174      ;
+; 0.500  ; reset     ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.122      ; 2.306      ;
+; 0.500  ; reset     ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.122      ; 2.306      ;
+; 0.500  ; reset     ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.122      ; 2.306      ;
+; 0.500  ; reset     ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.122      ; 2.306      ;
+; 0.501  ; reset     ; saque_concluido~reg0        ; reset        ; clk         ; -0.500       ; 2.121      ; 2.306      ;
+; 0.501  ; reset     ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.121      ; 2.306      ;
+; 0.501  ; reset     ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.121      ; 2.306      ;
+; 0.501  ; reset     ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.121      ; 2.306      ;
+; 0.501  ; reset     ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; -0.500       ; 2.121      ; 2.306      ;
++--------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width: 'clk'                                                                  ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                          ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; clk   ; Rise       ; clk                             ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; saque_concluido~reg0            ;
+; 0.217  ; 0.401        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated     ;
+; 0.217  ; 0.401        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated     ;
+; 0.217  ; 0.401        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated     ;
+; 0.217  ; 0.401        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated     ;
+; 0.217  ; 0.401        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; saque_concluido~reg0            ;
+; 0.218  ; 0.402        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated     ;
+; 0.218  ; 0.402        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated     ;
+; 0.218  ; 0.402        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated     ;
+; 0.218  ; 0.402        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated     ;
+; 0.344  ; 0.344        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~input|o                     ;
+; 0.346  ; 0.346        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~inputclkctrl|inclk[0]       ;
+; 0.346  ; 0.346        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~inputclkctrl|outclk         ;
+; 0.377  ; 0.377        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated|clk ;
+; 0.377  ; 0.377        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated|clk ;
+; 0.377  ; 0.377        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated|clk ;
+; 0.377  ; 0.377        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated|clk ;
+; 0.377  ; 0.377        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saque_concluido~reg0|clk        ;
+; 0.378  ; 0.378        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated|clk ;
+; 0.378  ; 0.378        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated|clk ;
+; 0.378  ; 0.378        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated|clk ;
+; 0.378  ; 0.378        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated|clk ;
+; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated     ;
+; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated     ;
+; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated     ;
+; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated     ;
+; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated     ;
+; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated     ;
+; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated     ;
+; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated     ;
+; 0.381  ; 0.597        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; saque_concluido~reg0            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~input|i                     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~input|i                     ;
+; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated|clk ;
+; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated|clk ;
+; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated|clk ;
+; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated|clk ;
+; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated|clk ;
+; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated|clk ;
+; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated|clk ;
+; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated|clk ;
+; 0.621  ; 0.621        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saque_concluido~reg0|clk        ;
+; 0.654  ; 0.654        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~inputclkctrl|inclk[0]       ;
+; 0.654  ; 0.654        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~inputclkctrl|outclk         ;
+; 0.656  ; 0.656        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~input|o                     ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width: 'reset'                                                            ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                      ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; reset ; Rise       ; reset                       ;
+; 0.344  ; 0.344        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; reset~input|o               ;
+; 0.346  ; 0.346        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; reset~inputclkctrl|inclk[0] ;
+; 0.346  ; 0.346        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; reset~inputclkctrl|outclk   ;
+; 0.372  ; 0.372        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[1]~5|datad       ;
+; 0.372  ; 0.372        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[2]~9|datad       ;
+; 0.372  ; 0.372        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[3]~13|datad      ;
+; 0.372  ; 0.372        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[4]~17|datad      ;
+; 0.373  ; 0.373        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[0]~1|datad       ;
+; 0.373  ; 0.373        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[5]~21|datad      ;
+; 0.373  ; 0.373        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[6]~25|datad      ;
+; 0.373  ; 0.373        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[7]~29|datad      ;
+; 0.394  ; 0.394        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[1]~5             ;
+; 0.394  ; 0.394        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[2]~9             ;
+; 0.394  ; 0.394        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[3]~13            ;
+; 0.394  ; 0.394        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[4]~17            ;
+; 0.395  ; 0.395        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[0]~1             ;
+; 0.395  ; 0.395        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[5]~21            ;
+; 0.395  ; 0.395        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[6]~25            ;
+; 0.395  ; 0.395        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[7]~29            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reset ; Rise       ; reset~input|i               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; reset~input|i               ;
+; 0.602  ; 0.602        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[2]~9             ;
+; 0.603  ; 0.603        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[0]~1             ;
+; 0.603  ; 0.603        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[1]~5             ;
+; 0.603  ; 0.603        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[3]~13            ;
+; 0.603  ; 0.603        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[4]~17            ;
+; 0.603  ; 0.603        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[5]~21            ;
+; 0.603  ; 0.603        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[6]~25            ;
+; 0.603  ; 0.603        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[7]~29            ;
+; 0.626  ; 0.626        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[2]~9|datad       ;
+; 0.627  ; 0.627        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[0]~1|datad       ;
+; 0.627  ; 0.627        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[1]~5|datad       ;
+; 0.627  ; 0.627        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[3]~13|datad      ;
+; 0.627  ; 0.627        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[4]~17|datad      ;
+; 0.627  ; 0.627        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[5]~21|datad      ;
+; 0.627  ; 0.627        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[6]~25|datad      ;
+; 0.627  ; 0.627        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[7]~29|datad      ;
+; 0.654  ; 0.654        ; 0.000          ; High Pulse Width ; reset ; Rise       ; reset~inputclkctrl|inclk[0] ;
+; 0.654  ; 0.654        ; 0.000          ; High Pulse Width ; reset ; Rise       ; reset~inputclkctrl|outclk   ;
+; 0.656  ; 0.656        ; 0.000          ; High Pulse Width ; reset ; Rise       ; reset~input|o               ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Setup Times                                                                 ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; iniciar_saque   ; clk        ; 3.067 ; 3.437 ; Rise       ; clk             ;
+; saldo_atual[*]  ; clk        ; 4.537 ; 5.091 ; Rise       ; clk             ;
+;  saldo_atual[0] ; clk        ; 4.537 ; 5.091 ; Rise       ; clk             ;
+;  saldo_atual[1] ; clk        ; 4.405 ; 4.706 ; Rise       ; clk             ;
+;  saldo_atual[2] ; clk        ; 3.832 ; 4.335 ; Rise       ; clk             ;
+;  saldo_atual[3] ; clk        ; 4.262 ; 4.553 ; Rise       ; clk             ;
+;  saldo_atual[4] ; clk        ; 3.920 ; 4.412 ; Rise       ; clk             ;
+;  saldo_atual[5] ; clk        ; 3.980 ; 4.292 ; Rise       ; clk             ;
+;  saldo_atual[6] ; clk        ; 3.662 ; 4.167 ; Rise       ; clk             ;
+;  saldo_atual[7] ; clk        ; 3.551 ; 3.846 ; Rise       ; clk             ;
+; valor_saque[*]  ; clk        ; 4.603 ; 4.832 ; Rise       ; clk             ;
+;  valor_saque[0] ; clk        ; 4.603 ; 4.832 ; Rise       ; clk             ;
+;  valor_saque[1] ; clk        ; 3.966 ; 4.353 ; Rise       ; clk             ;
+;  valor_saque[2] ; clk        ; 4.390 ; 4.612 ; Rise       ; clk             ;
+;  valor_saque[3] ; clk        ; 2.397 ; 2.559 ; Rise       ; clk             ;
+;  valor_saque[4] ; clk        ; 2.380 ; 2.341 ; Rise       ; clk             ;
+;  valor_saque[5] ; clk        ; 3.995 ; 4.369 ; Rise       ; clk             ;
+;  valor_saque[6] ; clk        ; 4.037 ; 4.262 ; Rise       ; clk             ;
+;  valor_saque[7] ; clk        ; 3.142 ; 3.479 ; Rise       ; clk             ;
+; saldo_atual[*]  ; reset      ; 2.613 ; 2.969 ; Fall       ; reset           ;
+;  saldo_atual[0] ; reset      ; 2.571 ; 2.969 ; Fall       ; reset           ;
+;  saldo_atual[1] ; reset      ; 2.613 ; 2.925 ; Fall       ; reset           ;
+;  saldo_atual[2] ; reset      ; 2.148 ; 2.479 ; Fall       ; reset           ;
+;  saldo_atual[3] ; reset      ; 2.593 ; 2.903 ; Fall       ; reset           ;
+;  saldo_atual[4] ; reset      ; 2.350 ; 2.677 ; Fall       ; reset           ;
+;  saldo_atual[5] ; reset      ; 2.415 ; 2.743 ; Fall       ; reset           ;
+;  saldo_atual[6] ; reset      ; 2.196 ; 2.533 ; Fall       ; reset           ;
+;  saldo_atual[7] ; reset      ; 2.358 ; 2.678 ; Fall       ; reset           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Hold Times                                                                    ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; iniciar_saque   ; clk        ; -2.398 ; -2.766 ; Rise       ; clk             ;
+; saldo_atual[*]  ; clk        ; -1.810 ; -2.133 ; Rise       ; clk             ;
+;  saldo_atual[0] ; clk        ; -2.382 ; -2.732 ; Rise       ; clk             ;
+;  saldo_atual[1] ; clk        ; -2.296 ; -2.592 ; Rise       ; clk             ;
+;  saldo_atual[2] ; clk        ; -1.887 ; -2.208 ; Rise       ; clk             ;
+;  saldo_atual[3] ; clk        ; -2.339 ; -2.617 ; Rise       ; clk             ;
+;  saldo_atual[4] ; clk        ; -2.022 ; -2.330 ; Rise       ; clk             ;
+;  saldo_atual[5] ; clk        ; -2.082 ; -2.389 ; Rise       ; clk             ;
+;  saldo_atual[6] ; clk        ; -1.810 ; -2.133 ; Rise       ; clk             ;
+;  saldo_atual[7] ; clk        ; -2.093 ; -2.380 ; Rise       ; clk             ;
+; valor_saque[*]  ; clk        ; -0.413 ; -0.511 ; Rise       ; clk             ;
+;  valor_saque[0] ; clk        ; -2.312 ; -2.654 ; Rise       ; clk             ;
+;  valor_saque[1] ; clk        ; -1.882 ; -2.198 ; Rise       ; clk             ;
+;  valor_saque[2] ; clk        ; -2.292 ; -2.642 ; Rise       ; clk             ;
+;  valor_saque[3] ; clk        ; -0.554 ; -0.648 ; Rise       ; clk             ;
+;  valor_saque[4] ; clk        ; -0.413 ; -0.511 ; Rise       ; clk             ;
+;  valor_saque[5] ; clk        ; -2.101 ; -2.405 ; Rise       ; clk             ;
+;  valor_saque[6] ; clk        ; -2.039 ; -2.395 ; Rise       ; clk             ;
+;  valor_saque[7] ; clk        ; -1.762 ; -2.090 ; Rise       ; clk             ;
+; saldo_atual[*]  ; reset      ; -1.270 ; -1.585 ; Fall       ; reset           ;
+;  saldo_atual[0] ; reset      ; -1.688 ; -2.068 ; Fall       ; reset           ;
+;  saldo_atual[1] ; reset      ; -1.724 ; -2.022 ; Fall       ; reset           ;
+;  saldo_atual[2] ; reset      ; -1.270 ; -1.585 ; Fall       ; reset           ;
+;  saldo_atual[3] ; reset      ; -1.708 ; -2.002 ; Fall       ; reset           ;
+;  saldo_atual[4] ; reset      ; -1.473 ; -1.783 ; Fall       ; reset           ;
+;  saldo_atual[5] ; reset      ; -1.514 ; -1.827 ; Fall       ; reset           ;
+;  saldo_atual[6] ; reset      ; -1.302 ; -1.621 ; Fall       ; reset           ;
+;  saldo_atual[7] ; reset      ; -1.482 ; -1.789 ; Fall       ; reset           ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Clock to Output Times                                                       ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; novo_saldo[*]   ; clk        ; 7.714 ; 7.696 ; Rise       ; clk             ;
+;  novo_saldo[0]  ; clk        ; 7.714 ; 7.696 ; Rise       ; clk             ;
+;  novo_saldo[1]  ; clk        ; 6.216 ; 6.039 ; Rise       ; clk             ;
+;  novo_saldo[2]  ; clk        ; 5.812 ; 5.641 ; Rise       ; clk             ;
+;  novo_saldo[3]  ; clk        ; 7.051 ; 6.925 ; Rise       ; clk             ;
+;  novo_saldo[4]  ; clk        ; 6.601 ; 6.533 ; Rise       ; clk             ;
+;  novo_saldo[5]  ; clk        ; 6.418 ; 6.329 ; Rise       ; clk             ;
+;  novo_saldo[6]  ; clk        ; 5.718 ; 5.540 ; Rise       ; clk             ;
+;  novo_saldo[7]  ; clk        ; 6.126 ; 6.081 ; Rise       ; clk             ;
+; saque_concluido ; clk        ; 4.995 ; 4.923 ; Rise       ; clk             ;
+; novo_saldo[*]   ; reset      ; 6.497 ; 6.412 ; Rise       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 6.497 ; 6.412 ; Rise       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 4.803 ; 4.662 ; Rise       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 4.808 ; 4.609 ; Rise       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 5.595 ; 5.512 ; Rise       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 5.619 ; 5.468 ; Rise       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 5.343 ; 5.299 ; Rise       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 4.688 ; 4.555 ; Rise       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 5.148 ; 5.029 ; Rise       ; reset           ;
+; novo_saldo[*]   ; reset      ; 7.444 ; 7.417 ; Fall       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 7.444 ; 7.417 ; Fall       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 6.068 ; 5.912 ; Fall       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 5.748 ; 5.614 ; Fall       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 6.848 ; 6.752 ; Fall       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 6.727 ; 6.642 ; Fall       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 6.760 ; 6.677 ; Fall       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 6.044 ; 5.872 ; Fall       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 6.591 ; 6.525 ; Fall       ; reset           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; novo_saldo[*]   ; clk        ; 5.506 ; 5.338 ; Rise       ; clk             ;
+;  novo_saldo[0]  ; clk        ; 7.409 ; 7.385 ; Rise       ; clk             ;
+;  novo_saldo[1]  ; clk        ; 5.920 ; 5.776 ; Rise       ; clk             ;
+;  novo_saldo[2]  ; clk        ; 5.585 ; 5.426 ; Rise       ; clk             ;
+;  novo_saldo[3]  ; clk        ; 6.704 ; 6.619 ; Rise       ; clk             ;
+;  novo_saldo[4]  ; clk        ; 6.334 ; 6.238 ; Rise       ; clk             ;
+;  novo_saldo[5]  ; clk        ; 6.158 ; 6.077 ; Rise       ; clk             ;
+;  novo_saldo[6]  ; clk        ; 5.506 ; 5.338 ; Rise       ; clk             ;
+;  novo_saldo[7]  ; clk        ; 5.910 ; 5.836 ; Rise       ; clk             ;
+; saque_concluido ; clk        ; 4.833 ; 4.761 ; Rise       ; clk             ;
+; novo_saldo[*]   ; reset      ; 4.345 ; 4.205 ; Rise       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 6.077 ; 6.095 ; Rise       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 4.505 ; 4.338 ; Rise       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 4.426 ; 4.295 ; Rise       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 5.267 ; 5.155 ; Rise       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 5.197 ; 5.163 ; Rise       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 4.968 ; 4.912 ; Rise       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 4.345 ; 4.205 ; Rise       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 4.782 ; 4.767 ; Rise       ; reset           ;
+; novo_saldo[*]   ; reset      ; 4.345 ; 4.205 ; Fall       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 6.077 ; 6.095 ; Fall       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 4.505 ; 4.338 ; Fall       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 4.426 ; 4.295 ; Fall       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 5.267 ; 5.155 ; Fall       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 5.197 ; 5.163 ; Fall       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 4.968 ; 4.912 ; Fall       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 4.345 ; 4.205 ; Fall       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 4.782 ; 4.767 ; Fall       ; reset           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++----------------+---------------+-------+----+----+-------+
+; Input Port     ; Output Port   ; RR    ; RF ; FR ; FF    ;
++----------------+---------------+-------+----+----+-------+
+; saldo_atual[0] ; novo_saldo[0] ; 8.560 ;    ;    ; 8.913 ;
+; saldo_atual[1] ; novo_saldo[1] ; 7.079 ;    ;    ; 7.211 ;
+; saldo_atual[2] ; novo_saldo[2] ; 6.560 ;    ;    ; 6.737 ;
+; saldo_atual[3] ; novo_saldo[3] ; 7.841 ;    ;    ; 8.034 ;
+; saldo_atual[4] ; novo_saldo[4] ; 7.470 ;    ;    ; 7.692 ;
+; saldo_atual[5] ; novo_saldo[5] ; 7.485 ;    ;    ; 7.772 ;
+; saldo_atual[6] ; novo_saldo[6] ; 6.609 ;    ;    ; 6.811 ;
+; saldo_atual[7] ; novo_saldo[7] ; 7.006 ;    ;    ; 7.242 ;
++----------------+---------------+-------+----+----+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++----------------+---------------+-------+----+----+-------+
+; Input Port     ; Output Port   ; RR    ; RF ; FR ; FF    ;
++----------------+---------------+-------+----+----+-------+
+; saldo_atual[0] ; novo_saldo[0] ; 8.287 ;    ;    ; 8.630 ;
+; saldo_atual[1] ; novo_saldo[1] ; 6.839 ;    ;    ; 6.969 ;
+; saldo_atual[2] ; novo_saldo[2] ; 6.334 ;    ;    ; 6.509 ;
+; saldo_atual[3] ; novo_saldo[3] ; 7.572 ;    ;    ; 7.760 ;
+; saldo_atual[4] ; novo_saldo[4] ; 7.209 ;    ;    ; 7.427 ;
+; saldo_atual[5] ; novo_saldo[5] ; 7.182 ;    ;    ; 7.450 ;
+; saldo_atual[6] ; novo_saldo[6] ; 6.346 ;    ;    ; 6.530 ;
+; saldo_atual[7] ; novo_saldo[7] ; 6.794 ;    ;    ; 7.026 ;
++----------------+---------------+-------+----+----+-------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clk   ; -0.157 ; -1.197            ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clk   ; 0.853 ; 0.000             ;
++-------+-------+-------------------+
+
+
++---------------------------------------+
+; Fast 1200mV 0C Model Recovery Summary ;
++-------+--------+----------------------+
+; Clock ; Slack  ; End Point TNS        ;
++-------+--------+----------------------+
+; clk   ; -0.029 ; -0.256               ;
++-------+--------+----------------------+
+
+
++--------------------------------------+
+; Fast 1200mV 0C Model Removal Summary ;
++-------+--------+---------------------+
+; Clock ; Slack  ; End Point TNS       ;
++-------+--------+---------------------+
+; clk   ; -0.084 ; -0.756              ;
++-------+--------+---------------------+
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clk   ; -3.000 ; -12.238                         ;
+; reset ; -3.000 ; -3.000                          ;
++-------+--------+---------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'clk'                                                                                             ;
++--------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; -0.157 ; novo_saldo[6]~25 ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.382     ; 0.242      ;
+; -0.156 ; novo_saldo[5]~21 ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.381     ; 0.242      ;
+; -0.150 ; novo_saldo[1]~5  ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.383     ; 0.234      ;
+; -0.149 ; novo_saldo[2]~9  ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.381     ; 0.235      ;
+; -0.148 ; novo_saldo[4]~17 ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.383     ; 0.232      ;
+; -0.146 ; novo_saldo[0]~1  ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.380     ; 0.233      ;
+; -0.146 ; novo_saldo[3]~13 ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.380     ; 0.233      ;
+; -0.145 ; novo_saldo[7]~29 ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; 0.500        ; -0.380     ; 0.232      ;
++--------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'clk'                                                                                             ;
++-------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; 0.853 ; novo_saldo[2]~9  ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.287     ; 0.190      ;
+; 0.856 ; novo_saldo[7]~29 ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.286     ; 0.194      ;
+; 0.857 ; novo_saldo[0]~1  ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.286     ; 0.195      ;
+; 0.857 ; novo_saldo[3]~13 ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.286     ; 0.195      ;
+; 0.859 ; novo_saldo[4]~17 ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.289     ; 0.194      ;
+; 0.861 ; novo_saldo[1]~5  ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.289     ; 0.196      ;
+; 0.863 ; novo_saldo[5]~21 ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.287     ; 0.200      ;
+; 0.865 ; novo_saldo[6]~25 ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; -0.500       ; -0.288     ; 0.201      ;
++-------+------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Recovery: 'clk'                                                                                   ;
++--------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; -0.029 ; reset     ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; 0.500        ; 1.298      ; 1.794      ;
+; -0.029 ; reset     ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; 0.500        ; 1.298      ; 1.794      ;
+; -0.029 ; reset     ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; 0.500        ; 1.298      ; 1.794      ;
+; -0.029 ; reset     ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; 0.500        ; 1.298      ; 1.794      ;
+; -0.028 ; reset     ; saque_concluido~reg0        ; reset        ; clk         ; 0.500        ; 1.298      ; 1.793      ;
+; -0.028 ; reset     ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; 0.500        ; 1.298      ; 1.793      ;
+; -0.028 ; reset     ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; 0.500        ; 1.298      ; 1.793      ;
+; -0.028 ; reset     ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; 0.500        ; 1.298      ; 1.793      ;
+; -0.028 ; reset     ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; 0.500        ; 1.298      ; 1.793      ;
+; 0.823  ; reset     ; saque_concluido~reg0        ; reset        ; clk         ; 1.000        ; 1.298      ; 1.442      ;
+; 0.823  ; reset     ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; 1.000        ; 1.298      ; 1.442      ;
+; 0.823  ; reset     ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; 1.000        ; 1.298      ; 1.442      ;
+; 0.823  ; reset     ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; 1.000        ; 1.298      ; 1.442      ;
+; 0.823  ; reset     ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; 1.000        ; 1.298      ; 1.442      ;
+; 0.823  ; reset     ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; 1.000        ; 1.298      ; 1.442      ;
+; 0.823  ; reset     ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; 1.000        ; 1.298      ; 1.442      ;
+; 0.823  ; reset     ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; 1.000        ; 1.298      ; 1.442      ;
+; 0.823  ; reset     ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; 1.000        ; 1.298      ; 1.442      ;
++--------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Removal: 'clk'                                                                                    ;
++--------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; -0.084 ; reset     ; saque_concluido~reg0        ; reset        ; clk         ; 0.000        ; 1.351      ; 1.391      ;
+; -0.084 ; reset     ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; 0.000        ; 1.351      ; 1.391      ;
+; -0.084 ; reset     ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; 0.000        ; 1.351      ; 1.391      ;
+; -0.084 ; reset     ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; 0.000        ; 1.351      ; 1.391      ;
+; -0.084 ; reset     ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; 0.000        ; 1.351      ; 1.391      ;
+; -0.084 ; reset     ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; 0.000        ; 1.351      ; 1.391      ;
+; -0.084 ; reset     ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; 0.000        ; 1.351      ; 1.391      ;
+; -0.084 ; reset     ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; 0.000        ; 1.351      ; 1.391      ;
+; -0.084 ; reset     ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; 0.000        ; 1.351      ; 1.391      ;
+; 0.763  ; reset     ; saque_concluido~reg0        ; reset        ; clk         ; -0.500       ; 1.351      ; 1.738      ;
+; 0.763  ; reset     ; novo_saldo[0]~reg0_emulated ; reset        ; clk         ; -0.500       ; 1.351      ; 1.738      ;
+; 0.763  ; reset     ; novo_saldo[1]~reg0_emulated ; reset        ; clk         ; -0.500       ; 1.351      ; 1.738      ;
+; 0.763  ; reset     ; novo_saldo[2]~reg0_emulated ; reset        ; clk         ; -0.500       ; 1.351      ; 1.738      ;
+; 0.763  ; reset     ; novo_saldo[3]~reg0_emulated ; reset        ; clk         ; -0.500       ; 1.351      ; 1.738      ;
+; 0.763  ; reset     ; novo_saldo[4]~reg0_emulated ; reset        ; clk         ; -0.500       ; 1.351      ; 1.738      ;
+; 0.763  ; reset     ; novo_saldo[5]~reg0_emulated ; reset        ; clk         ; -0.500       ; 1.351      ; 1.738      ;
+; 0.763  ; reset     ; novo_saldo[6]~reg0_emulated ; reset        ; clk         ; -0.500       ; 1.351      ; 1.738      ;
+; 0.763  ; reset     ; novo_saldo[7]~reg0_emulated ; reset        ; clk         ; -0.500       ; 1.351      ; 1.738      ;
++--------+-----------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width: 'clk'                                                                  ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                          ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; clk   ; Rise       ; clk                             ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; clk   ; Rise       ; saque_concluido~reg0            ;
+; -0.027 ; 0.157        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated     ;
+; -0.027 ; 0.157        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated     ;
+; -0.027 ; 0.157        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated     ;
+; -0.027 ; 0.157        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated     ;
+; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated     ;
+; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated     ;
+; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated     ;
+; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated     ;
+; -0.026 ; 0.158        ; 0.184          ; Low Pulse Width  ; clk   ; Rise       ; saque_concluido~reg0            ;
+; 0.125  ; 0.125        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~input|o                     ;
+; 0.139  ; 0.139        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~inputclkctrl|inclk[0]       ;
+; 0.139  ; 0.139        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~inputclkctrl|outclk         ;
+; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated|clk ;
+; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated|clk ;
+; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated|clk ;
+; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated|clk ;
+; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated|clk ;
+; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated|clk ;
+; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated|clk ;
+; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated|clk ;
+; 0.153  ; 0.153        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saque_concluido~reg0|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~input|i                     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~input|i                     ;
+; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated     ;
+; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated     ;
+; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated     ;
+; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated     ;
+; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated     ;
+; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated     ;
+; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated     ;
+; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated     ;
+; 0.625  ; 0.841        ; 0.216          ; High Pulse Width ; clk   ; Rise       ; saque_concluido~reg0            ;
+; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[0]~reg0_emulated|clk ;
+; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[2]~reg0_emulated|clk ;
+; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[6]~reg0_emulated|clk ;
+; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[7]~reg0_emulated|clk ;
+; 0.846  ; 0.846        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saque_concluido~reg0|clk        ;
+; 0.847  ; 0.847        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[1]~reg0_emulated|clk ;
+; 0.847  ; 0.847        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[3]~reg0_emulated|clk ;
+; 0.847  ; 0.847        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[4]~reg0_emulated|clk ;
+; 0.847  ; 0.847        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; novo_saldo[5]~reg0_emulated|clk ;
+; 0.861  ; 0.861        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~inputclkctrl|inclk[0]       ;
+; 0.861  ; 0.861        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~inputclkctrl|outclk         ;
+; 0.875  ; 0.875        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~input|o                     ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width: 'reset'                                                            ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                      ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; reset ; Rise       ; reset                       ;
+; 0.125  ; 0.125        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; reset~input|o               ;
+; 0.129  ; 0.129        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[0]~1|datad       ;
+; 0.129  ; 0.129        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[1]~5|datad       ;
+; 0.129  ; 0.129        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[2]~9|datad       ;
+; 0.129  ; 0.129        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[3]~13|datad      ;
+; 0.129  ; 0.129        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[5]~21|datad      ;
+; 0.129  ; 0.129        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[6]~25|datad      ;
+; 0.129  ; 0.129        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[7]~29|datad      ;
+; 0.130  ; 0.130        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; novo_saldo[4]~17|datad      ;
+; 0.134  ; 0.134        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[0]~1             ;
+; 0.134  ; 0.134        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[1]~5             ;
+; 0.134  ; 0.134        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[2]~9             ;
+; 0.134  ; 0.134        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[3]~13            ;
+; 0.134  ; 0.134        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[4]~17            ;
+; 0.134  ; 0.134        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[5]~21            ;
+; 0.134  ; 0.134        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[6]~25            ;
+; 0.134  ; 0.134        ; 0.000          ; High Pulse Width ; reset ; Fall       ; novo_saldo[7]~29            ;
+; 0.139  ; 0.139        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; reset~inputclkctrl|inclk[0] ;
+; 0.139  ; 0.139        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; reset~inputclkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reset ; Rise       ; reset~input|i               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reset ; Rise       ; reset~input|i               ;
+; 0.861  ; 0.861        ; 0.000          ; High Pulse Width ; reset ; Rise       ; reset~inputclkctrl|inclk[0] ;
+; 0.861  ; 0.861        ; 0.000          ; High Pulse Width ; reset ; Rise       ; reset~inputclkctrl|outclk   ;
+; 0.865  ; 0.865        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[4]~17            ;
+; 0.866  ; 0.866        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[0]~1             ;
+; 0.866  ; 0.866        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[1]~5             ;
+; 0.866  ; 0.866        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[2]~9             ;
+; 0.866  ; 0.866        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[3]~13            ;
+; 0.866  ; 0.866        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[5]~21            ;
+; 0.866  ; 0.866        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[6]~25            ;
+; 0.866  ; 0.866        ; 0.000          ; Low Pulse Width  ; reset ; Fall       ; novo_saldo[7]~29            ;
+; 0.870  ; 0.870        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[0]~1|datad       ;
+; 0.870  ; 0.870        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[1]~5|datad       ;
+; 0.870  ; 0.870        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[2]~9|datad       ;
+; 0.870  ; 0.870        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[3]~13|datad      ;
+; 0.870  ; 0.870        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[4]~17|datad      ;
+; 0.870  ; 0.870        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[5]~21|datad      ;
+; 0.870  ; 0.870        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[6]~25|datad      ;
+; 0.870  ; 0.870        ; 0.000          ; High Pulse Width ; reset ; Rise       ; novo_saldo[7]~29|datad      ;
+; 0.875  ; 0.875        ; 0.000          ; High Pulse Width ; reset ; Rise       ; reset~input|o               ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Setup Times                                                                 ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; iniciar_saque   ; clk        ; 1.939 ; 2.603 ; Rise       ; clk             ;
+; saldo_atual[*]  ; clk        ; 2.871 ; 3.637 ; Rise       ; clk             ;
+;  saldo_atual[0] ; clk        ; 2.871 ; 3.637 ; Rise       ; clk             ;
+;  saldo_atual[1] ; clk        ; 2.769 ; 3.358 ; Rise       ; clk             ;
+;  saldo_atual[2] ; clk        ; 2.415 ; 3.101 ; Rise       ; clk             ;
+;  saldo_atual[3] ; clk        ; 2.682 ; 3.255 ; Rise       ; clk             ;
+;  saldo_atual[4] ; clk        ; 2.467 ; 3.160 ; Rise       ; clk             ;
+;  saldo_atual[5] ; clk        ; 2.497 ; 3.070 ; Rise       ; clk             ;
+;  saldo_atual[6] ; clk        ; 2.300 ; 2.992 ; Rise       ; clk             ;
+;  saldo_atual[7] ; clk        ; 2.219 ; 2.802 ; Rise       ; clk             ;
+; valor_saque[*]  ; clk        ; 2.899 ; 3.450 ; Rise       ; clk             ;
+;  valor_saque[0] ; clk        ; 2.899 ; 3.450 ; Rise       ; clk             ;
+;  valor_saque[1] ; clk        ; 2.509 ; 3.124 ; Rise       ; clk             ;
+;  valor_saque[2] ; clk        ; 2.780 ; 3.305 ; Rise       ; clk             ;
+;  valor_saque[3] ; clk        ; 1.500 ; 1.805 ; Rise       ; clk             ;
+;  valor_saque[4] ; clk        ; 1.481 ; 1.657 ; Rise       ; clk             ;
+;  valor_saque[5] ; clk        ; 2.493 ; 3.131 ; Rise       ; clk             ;
+;  valor_saque[6] ; clk        ; 2.534 ; 3.070 ; Rise       ; clk             ;
+;  valor_saque[7] ; clk        ; 1.983 ; 2.549 ; Rise       ; clk             ;
+; saldo_atual[*]  ; reset      ; 1.373 ; 2.020 ; Fall       ; reset           ;
+;  saldo_atual[0] ; reset      ; 1.373 ; 2.020 ; Fall       ; reset           ;
+;  saldo_atual[1] ; reset      ; 1.365 ; 1.974 ; Fall       ; reset           ;
+;  saldo_atual[2] ; reset      ; 1.102 ; 1.670 ; Fall       ; reset           ;
+;  saldo_atual[3] ; reset      ; 1.358 ; 1.962 ; Fall       ; reset           ;
+;  saldo_atual[4] ; reset      ; 1.216 ; 1.805 ; Fall       ; reset           ;
+;  saldo_atual[5] ; reset      ; 1.253 ; 1.849 ; Fall       ; reset           ;
+;  saldo_atual[6] ; reset      ; 1.130 ; 1.711 ; Fall       ; reset           ;
+;  saldo_atual[7] ; reset      ; 1.214 ; 1.800 ; Fall       ; reset           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Hold Times                                                                    ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; iniciar_saque   ; clk        ; -1.513 ; -2.171 ; Rise       ; clk             ;
+; saldo_atual[*]  ; clk        ; -1.145 ; -1.726 ; Rise       ; clk             ;
+;  saldo_atual[0] ; clk        ; -1.510 ; -2.158 ; Rise       ; clk             ;
+;  saldo_atual[1] ; clk        ; -1.428 ; -2.036 ; Rise       ; clk             ;
+;  saldo_atual[2] ; clk        ; -1.186 ; -1.762 ; Rise       ; clk             ;
+;  saldo_atual[3] ; clk        ; -1.461 ; -2.053 ; Rise       ; clk             ;
+;  saldo_atual[4] ; clk        ; -1.278 ; -1.861 ; Rise       ; clk             ;
+;  saldo_atual[5] ; clk        ; -1.299 ; -1.892 ; Rise       ; clk             ;
+;  saldo_atual[6] ; clk        ; -1.145 ; -1.726 ; Rise       ; clk             ;
+;  saldo_atual[7] ; clk        ; -1.315 ; -1.891 ; Rise       ; clk             ;
+; valor_saque[*]  ; clk        ; -0.245 ; -0.523 ; Rise       ; clk             ;
+;  valor_saque[0] ; clk        ; -1.446 ; -2.094 ; Rise       ; clk             ;
+;  valor_saque[1] ; clk        ; -1.191 ; -1.763 ; Rise       ; clk             ;
+;  valor_saque[2] ; clk        ; -1.450 ; -2.063 ; Rise       ; clk             ;
+;  valor_saque[3] ; clk        ; -0.336 ; -0.612 ; Rise       ; clk             ;
+;  valor_saque[4] ; clk        ; -0.245 ; -0.523 ; Rise       ; clk             ;
+;  valor_saque[5] ; clk        ; -1.305 ; -1.899 ; Rise       ; clk             ;
+;  valor_saque[6] ; clk        ; -1.285 ; -1.909 ; Rise       ; clk             ;
+;  valor_saque[7] ; clk        ; -1.134 ; -1.703 ; Rise       ; clk             ;
+; saldo_atual[*]  ; reset      ; -0.545 ; -1.099 ; Fall       ; reset           ;
+;  saldo_atual[0] ; reset      ; -0.820 ; -1.449 ; Fall       ; reset           ;
+;  saldo_atual[1] ; reset      ; -0.810 ; -1.402 ; Fall       ; reset           ;
+;  saldo_atual[2] ; reset      ; -0.545 ; -1.099 ; Fall       ; reset           ;
+;  saldo_atual[3] ; reset      ; -0.805 ; -1.387 ; Fall       ; reset           ;
+;  saldo_atual[4] ; reset      ; -0.669 ; -1.237 ; Fall       ; reset           ;
+;  saldo_atual[5] ; reset      ; -0.684 ; -1.265 ; Fall       ; reset           ;
+;  saldo_atual[6] ; reset      ; -0.567 ; -1.127 ; Fall       ; reset           ;
+;  saldo_atual[7] ; reset      ; -0.667 ; -1.237 ; Fall       ; reset           ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Clock to Output Times                                                       ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; novo_saldo[*]   ; clk        ; 5.166 ; 5.298 ; Rise       ; clk             ;
+;  novo_saldo[0]  ; clk        ; 5.166 ; 5.298 ; Rise       ; clk             ;
+;  novo_saldo[1]  ; clk        ; 4.018 ; 4.033 ; Rise       ; clk             ;
+;  novo_saldo[2]  ; clk        ; 3.758 ; 3.758 ; Rise       ; clk             ;
+;  novo_saldo[3]  ; clk        ; 4.630 ; 4.677 ; Rise       ; clk             ;
+;  novo_saldo[4]  ; clk        ; 4.274 ; 4.388 ; Rise       ; clk             ;
+;  novo_saldo[5]  ; clk        ; 4.177 ; 4.245 ; Rise       ; clk             ;
+;  novo_saldo[6]  ; clk        ; 3.708 ; 3.714 ; Rise       ; clk             ;
+;  novo_saldo[7]  ; clk        ; 4.141 ; 4.164 ; Rise       ; clk             ;
+; saque_concluido ; clk        ; 3.274 ; 3.285 ; Rise       ; clk             ;
+; novo_saldo[*]   ; reset      ; 4.629 ; 4.720 ; Rise       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 4.629 ; 4.720 ; Rise       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 3.341 ; 3.389 ; Rise       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 3.357 ; 3.332 ; Rise       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 3.920 ; 4.007 ; Rise       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 3.899 ; 3.955 ; Rise       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 3.723 ; 3.816 ; Rise       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 3.287 ; 3.314 ; Rise       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 3.768 ; 3.738 ; Rise       ; reset           ;
+; novo_saldo[*]   ; reset      ; 5.271 ; 5.415 ; Fall       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 5.271 ; 5.415 ; Fall       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 4.223 ; 4.231 ; Fall       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 3.999 ; 4.031 ; Fall       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 4.791 ; 4.845 ; Fall       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 4.657 ; 4.759 ; Fall       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 4.674 ; 4.765 ; Fall       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 4.173 ; 4.202 ; Fall       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 4.722 ; 4.733 ; Fall       ; reset           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; novo_saldo[*]   ; clk        ; 3.539 ; 3.553 ; Rise       ; clk             ;
+;  novo_saldo[0]  ; clk        ; 4.939 ; 5.065 ; Rise       ; clk             ;
+;  novo_saldo[1]  ; clk        ; 3.792 ; 3.833 ; Rise       ; clk             ;
+;  novo_saldo[2]  ; clk        ; 3.588 ; 3.595 ; Rise       ; clk             ;
+;  novo_saldo[3]  ; clk        ; 4.368 ; 4.447 ; Rise       ; clk             ;
+;  novo_saldo[4]  ; clk        ; 4.098 ; 4.188 ; Rise       ; clk             ;
+;  novo_saldo[5]  ; clk        ; 3.980 ; 4.051 ; Rise       ; clk             ;
+;  novo_saldo[6]  ; clk        ; 3.539 ; 3.553 ; Rise       ; clk             ;
+;  novo_saldo[7]  ; clk        ; 3.998 ; 4.001 ; Rise       ; clk             ;
+; saque_concluido ; clk        ; 3.166 ; 3.176 ; Rise       ; clk             ;
+; novo_saldo[*]   ; reset      ; 2.822 ; 2.843 ; Rise       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 4.112 ; 4.261 ; Rise       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 2.908 ; 2.934 ; Rise       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 2.867 ; 2.881 ; Rise       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 3.465 ; 3.528 ; Rise       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 3.377 ; 3.499 ; Rise       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 3.236 ; 3.314 ; Rise       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 2.822 ; 2.843 ; Rise       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 3.286 ; 3.319 ; Rise       ; reset           ;
+; novo_saldo[*]   ; reset      ; 2.822 ; 2.843 ; Fall       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 4.112 ; 4.261 ; Fall       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 2.908 ; 2.934 ; Fall       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 2.867 ; 2.881 ; Fall       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 3.465 ; 3.528 ; Fall       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 3.377 ; 3.499 ; Fall       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 3.236 ; 3.314 ; Fall       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 2.822 ; 2.843 ; Fall       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 3.286 ; 3.319 ; Fall       ; reset           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++----------------+---------------+-------+----+----+-------+
+; Input Port     ; Output Port   ; RR    ; RF ; FR ; FF    ;
++----------------+---------------+-------+----+----+-------+
+; saldo_atual[0] ; novo_saldo[0] ; 5.758 ;    ;    ; 6.514 ;
+; saldo_atual[1] ; novo_saldo[1] ; 4.578 ;    ;    ; 5.202 ;
+; saldo_atual[2] ; novo_saldo[2] ; 4.276 ;    ;    ; 4.842 ;
+; saldo_atual[3] ; novo_saldo[3] ; 5.143 ;    ;    ; 5.799 ;
+; saldo_atual[4] ; novo_saldo[4] ; 4.872 ;    ;    ; 5.543 ;
+; saldo_atual[5] ; novo_saldo[5] ; 4.877 ;    ;    ; 5.559 ;
+; saldo_atual[6] ; novo_saldo[6] ; 4.317 ;    ;    ; 4.921 ;
+; saldo_atual[7] ; novo_saldo[7] ; 4.739 ;    ;    ; 5.314 ;
++----------------+---------------+-------+----+----+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++----------------+---------------+-------+----+----+-------+
+; Input Port     ; Output Port   ; RR    ; RF ; FR ; FF    ;
++----------------+---------------+-------+----+----+-------+
+; saldo_atual[0] ; novo_saldo[0] ; 5.575 ;    ;    ; 6.318 ;
+; saldo_atual[1] ; novo_saldo[1] ; 4.422 ;    ;    ; 5.035 ;
+; saldo_atual[2] ; novo_saldo[2] ; 4.128 ;    ;    ; 4.687 ;
+; saldo_atual[3] ; novo_saldo[3] ; 4.965 ;    ;    ; 5.608 ;
+; saldo_atual[4] ; novo_saldo[4] ; 4.699 ;    ;    ; 5.358 ;
+; saldo_atual[5] ; novo_saldo[5] ; 4.675 ;    ;    ; 5.342 ;
+; saldo_atual[6] ; novo_saldo[6] ; 4.141 ;    ;    ; 4.734 ;
+; saldo_atual[7] ; novo_saldo[7] ; 4.597 ;    ;    ; 5.166 ;
++----------------+---------------+-------+----+----+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                          ;
++------------------+--------+-------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -0.157 ; 0.645 ; -0.029   ; -0.131  ; -3.000              ;
+;  clk             ; -0.157 ; 0.645 ; -0.029   ; -0.131  ; -3.000              ;
+;  reset           ; N/A    ; N/A   ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -1.197 ; 0.0   ; -0.256   ; -1.179  ; -15.238             ;
+;  clk             ; -1.197 ; 0.000 ; -0.256   ; -1.179  ; -12.238             ;
+;  reset           ; N/A    ; N/A   ; N/A      ; N/A     ; -3.000              ;
++------------------+--------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------------+
+; Setup Times                                                                 ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; iniciar_saque   ; clk        ; 3.465 ; 3.967 ; Rise       ; clk             ;
+; saldo_atual[*]  ; clk        ; 5.123 ; 5.832 ; Rise       ; clk             ;
+;  saldo_atual[0] ; clk        ; 5.123 ; 5.832 ; Rise       ; clk             ;
+;  saldo_atual[1] ; clk        ; 4.991 ; 5.396 ; Rise       ; clk             ;
+;  saldo_atual[2] ; clk        ; 4.360 ; 4.989 ; Rise       ; clk             ;
+;  saldo_atual[3] ; clk        ; 4.822 ; 5.221 ; Rise       ; clk             ;
+;  saldo_atual[4] ; clk        ; 4.442 ; 5.071 ; Rise       ; clk             ;
+;  saldo_atual[5] ; clk        ; 4.515 ; 4.925 ; Rise       ; clk             ;
+;  saldo_atual[6] ; clk        ; 4.162 ; 4.790 ; Rise       ; clk             ;
+;  saldo_atual[7] ; clk        ; 4.025 ; 4.420 ; Rise       ; clk             ;
+; valor_saque[*]  ; clk        ; 5.219 ; 5.532 ; Rise       ; clk             ;
+;  valor_saque[0] ; clk        ; 5.219 ; 5.532 ; Rise       ; clk             ;
+;  valor_saque[1] ; clk        ; 4.526 ; 5.000 ; Rise       ; clk             ;
+;  valor_saque[2] ; clk        ; 4.972 ; 5.275 ; Rise       ; clk             ;
+;  valor_saque[3] ; clk        ; 2.659 ; 2.795 ; Rise       ; clk             ;
+;  valor_saque[4] ; clk        ; 2.646 ; 2.550 ; Rise       ; clk             ;
+;  valor_saque[5] ; clk        ; 4.532 ; 5.015 ; Rise       ; clk             ;
+;  valor_saque[6] ; clk        ; 4.577 ; 4.882 ; Rise       ; clk             ;
+;  valor_saque[7] ; clk        ; 3.581 ; 3.996 ; Rise       ; clk             ;
+; saldo_atual[*]  ; reset      ; 2.984 ; 3.444 ; Fall       ; reset           ;
+;  saldo_atual[0] ; reset      ; 2.931 ; 3.444 ; Fall       ; reset           ;
+;  saldo_atual[1] ; reset      ; 2.984 ; 3.401 ; Fall       ; reset           ;
+;  saldo_atual[2] ; reset      ; 2.495 ; 2.914 ; Fall       ; reset           ;
+;  saldo_atual[3] ; reset      ; 2.947 ; 3.381 ; Fall       ; reset           ;
+;  saldo_atual[4] ; reset      ; 2.688 ; 3.125 ; Fall       ; reset           ;
+;  saldo_atual[5] ; reset      ; 2.772 ; 3.210 ; Fall       ; reset           ;
+;  saldo_atual[6] ; reset      ; 2.537 ; 2.973 ; Fall       ; reset           ;
+;  saldo_atual[7] ; reset      ; 2.705 ; 3.127 ; Fall       ; reset           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Hold Times                                                                    ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; iniciar_saque   ; clk        ; -1.513 ; -2.171 ; Rise       ; clk             ;
+; saldo_atual[*]  ; clk        ; -1.145 ; -1.726 ; Rise       ; clk             ;
+;  saldo_atual[0] ; clk        ; -1.510 ; -2.158 ; Rise       ; clk             ;
+;  saldo_atual[1] ; clk        ; -1.428 ; -2.036 ; Rise       ; clk             ;
+;  saldo_atual[2] ; clk        ; -1.186 ; -1.762 ; Rise       ; clk             ;
+;  saldo_atual[3] ; clk        ; -1.461 ; -2.053 ; Rise       ; clk             ;
+;  saldo_atual[4] ; clk        ; -1.278 ; -1.861 ; Rise       ; clk             ;
+;  saldo_atual[5] ; clk        ; -1.299 ; -1.892 ; Rise       ; clk             ;
+;  saldo_atual[6] ; clk        ; -1.145 ; -1.726 ; Rise       ; clk             ;
+;  saldo_atual[7] ; clk        ; -1.315 ; -1.891 ; Rise       ; clk             ;
+; valor_saque[*]  ; clk        ; -0.245 ; -0.511 ; Rise       ; clk             ;
+;  valor_saque[0] ; clk        ; -1.446 ; -2.094 ; Rise       ; clk             ;
+;  valor_saque[1] ; clk        ; -1.191 ; -1.763 ; Rise       ; clk             ;
+;  valor_saque[2] ; clk        ; -1.450 ; -2.063 ; Rise       ; clk             ;
+;  valor_saque[3] ; clk        ; -0.336 ; -0.612 ; Rise       ; clk             ;
+;  valor_saque[4] ; clk        ; -0.245 ; -0.511 ; Rise       ; clk             ;
+;  valor_saque[5] ; clk        ; -1.305 ; -1.899 ; Rise       ; clk             ;
+;  valor_saque[6] ; clk        ; -1.285 ; -1.909 ; Rise       ; clk             ;
+;  valor_saque[7] ; clk        ; -1.134 ; -1.703 ; Rise       ; clk             ;
+; saldo_atual[*]  ; reset      ; -0.545 ; -1.099 ; Fall       ; reset           ;
+;  saldo_atual[0] ; reset      ; -0.820 ; -1.449 ; Fall       ; reset           ;
+;  saldo_atual[1] ; reset      ; -0.810 ; -1.402 ; Fall       ; reset           ;
+;  saldo_atual[2] ; reset      ; -0.545 ; -1.099 ; Fall       ; reset           ;
+;  saldo_atual[3] ; reset      ; -0.805 ; -1.387 ; Fall       ; reset           ;
+;  saldo_atual[4] ; reset      ; -0.669 ; -1.237 ; Fall       ; reset           ;
+;  saldo_atual[5] ; reset      ; -0.684 ; -1.265 ; Fall       ; reset           ;
+;  saldo_atual[6] ; reset      ; -0.567 ; -1.127 ; Fall       ; reset           ;
+;  saldo_atual[7] ; reset      ; -0.667 ; -1.237 ; Fall       ; reset           ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Clock to Output Times                                                       ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; novo_saldo[*]   ; clk        ; 8.638 ; 8.654 ; Rise       ; clk             ;
+;  novo_saldo[0]  ; clk        ; 8.638 ; 8.654 ; Rise       ; clk             ;
+;  novo_saldo[1]  ; clk        ; 6.928 ; 6.782 ; Rise       ; clk             ;
+;  novo_saldo[2]  ; clk        ; 6.487 ; 6.336 ; Rise       ; clk             ;
+;  novo_saldo[3]  ; clk        ; 7.845 ; 7.782 ; Rise       ; clk             ;
+;  novo_saldo[4]  ; clk        ; 7.353 ; 7.312 ; Rise       ; clk             ;
+;  novo_saldo[5]  ; clk        ; 7.168 ; 7.098 ; Rise       ; clk             ;
+;  novo_saldo[6]  ; clk        ; 6.369 ; 6.224 ; Rise       ; clk             ;
+;  novo_saldo[7]  ; clk        ; 6.894 ; 6.853 ; Rise       ; clk             ;
+; saque_concluido ; clk        ; 5.601 ; 5.523 ; Rise       ; clk             ;
+; novo_saldo[*]   ; reset      ; 7.242 ; 7.182 ; Rise       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 7.242 ; 7.182 ; Rise       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 5.315 ; 5.211 ; Rise       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 5.332 ; 5.148 ; Rise       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 6.182 ; 6.171 ; Rise       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 6.239 ; 6.102 ; Rise       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 5.939 ; 5.920 ; Rise       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 5.184 ; 5.088 ; Rise       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 5.771 ; 5.646 ; Rise       ; reset           ;
+; novo_saldo[*]   ; reset      ; 8.318 ; 8.339 ; Fall       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 8.318 ; 8.339 ; Fall       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 6.767 ; 6.626 ; Fall       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 6.409 ; 6.309 ; Fall       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 7.620 ; 7.577 ; Fall       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 7.493 ; 7.444 ; Fall       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 7.524 ; 7.479 ; Fall       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 6.707 ; 6.569 ; Fall       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 7.391 ; 7.323 ; Fall       ; reset           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; novo_saldo[*]   ; clk        ; 3.539 ; 3.553 ; Rise       ; clk             ;
+;  novo_saldo[0]  ; clk        ; 4.939 ; 5.065 ; Rise       ; clk             ;
+;  novo_saldo[1]  ; clk        ; 3.792 ; 3.833 ; Rise       ; clk             ;
+;  novo_saldo[2]  ; clk        ; 3.588 ; 3.595 ; Rise       ; clk             ;
+;  novo_saldo[3]  ; clk        ; 4.368 ; 4.447 ; Rise       ; clk             ;
+;  novo_saldo[4]  ; clk        ; 4.098 ; 4.188 ; Rise       ; clk             ;
+;  novo_saldo[5]  ; clk        ; 3.980 ; 4.051 ; Rise       ; clk             ;
+;  novo_saldo[6]  ; clk        ; 3.539 ; 3.553 ; Rise       ; clk             ;
+;  novo_saldo[7]  ; clk        ; 3.998 ; 4.001 ; Rise       ; clk             ;
+; saque_concluido ; clk        ; 3.166 ; 3.176 ; Rise       ; clk             ;
+; novo_saldo[*]   ; reset      ; 2.822 ; 2.843 ; Rise       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 4.112 ; 4.261 ; Rise       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 2.908 ; 2.934 ; Rise       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 2.867 ; 2.881 ; Rise       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 3.465 ; 3.528 ; Rise       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 3.377 ; 3.499 ; Rise       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 3.236 ; 3.314 ; Rise       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 2.822 ; 2.843 ; Rise       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 3.286 ; 3.319 ; Rise       ; reset           ;
+; novo_saldo[*]   ; reset      ; 2.822 ; 2.843 ; Fall       ; reset           ;
+;  novo_saldo[0]  ; reset      ; 4.112 ; 4.261 ; Fall       ; reset           ;
+;  novo_saldo[1]  ; reset      ; 2.908 ; 2.934 ; Fall       ; reset           ;
+;  novo_saldo[2]  ; reset      ; 2.867 ; 2.881 ; Fall       ; reset           ;
+;  novo_saldo[3]  ; reset      ; 3.465 ; 3.528 ; Fall       ; reset           ;
+;  novo_saldo[4]  ; reset      ; 3.377 ; 3.499 ; Fall       ; reset           ;
+;  novo_saldo[5]  ; reset      ; 3.236 ; 3.314 ; Fall       ; reset           ;
+;  novo_saldo[6]  ; reset      ; 2.822 ; 2.843 ; Fall       ; reset           ;
+;  novo_saldo[7]  ; reset      ; 3.286 ; 3.319 ; Fall       ; reset           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------+
+; Progagation Delay                                         ;
++----------------+---------------+-------+----+----+--------+
+; Input Port     ; Output Port   ; RR    ; RF ; FR ; FF     ;
++----------------+---------------+-------+----+----+--------+
+; saldo_atual[0] ; novo_saldo[0] ; 9.651 ;    ;    ; 10.138 ;
+; saldo_atual[1] ; novo_saldo[1] ; 7.961 ;    ;    ; 8.222  ;
+; saldo_atual[2] ; novo_saldo[2] ; 7.413 ;    ;    ; 7.689  ;
+; saldo_atual[3] ; novo_saldo[3] ; 8.779 ;    ;    ; 9.155  ;
+; saldo_atual[4] ; novo_saldo[4] ; 8.403 ;    ;    ; 8.748  ;
+; saldo_atual[5] ; novo_saldo[5] ; 8.436 ;    ;    ; 8.846  ;
+; saldo_atual[6] ; novo_saldo[6] ; 7.451 ;    ;    ; 7.781  ;
+; saldo_atual[7] ; novo_saldo[7] ; 7.963 ;    ;    ; 8.291  ;
++----------------+---------------+-------+----+----+--------+
+
+
++----------------------------------------------------------+
+; Minimum Progagation Delay                                ;
++----------------+---------------+-------+----+----+-------+
+; Input Port     ; Output Port   ; RR    ; RF ; FR ; FF    ;
++----------------+---------------+-------+----+----+-------+
+; saldo_atual[0] ; novo_saldo[0] ; 5.575 ;    ;    ; 6.318 ;
+; saldo_atual[1] ; novo_saldo[1] ; 4.422 ;    ;    ; 5.035 ;
+; saldo_atual[2] ; novo_saldo[2] ; 4.128 ;    ;    ; 4.687 ;
+; saldo_atual[3] ; novo_saldo[3] ; 4.965 ;    ;    ; 5.608 ;
+; saldo_atual[4] ; novo_saldo[4] ; 4.699 ;    ;    ; 5.358 ;
+; saldo_atual[5] ; novo_saldo[5] ; 4.675 ;    ;    ; 5.342 ;
+; saldo_atual[6] ; novo_saldo[6] ; 4.141 ;    ;    ; 4.734 ;
+; saldo_atual[7] ; novo_saldo[7] ; 4.597 ;    ;    ; 5.166 ;
++----------------+---------------+-------+----+----+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                      ;
++-----------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin             ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++-----------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; saque_concluido ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; novo_saldo[0]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; novo_saldo[1]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; novo_saldo[2]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; novo_saldo[3]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; novo_saldo[4]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; novo_saldo[5]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; novo_saldo[6]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; novo_saldo[7]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_NCEO~   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++-----------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++-------------------------------------------------------------------+
+; Input Transition Times                                            ;
++----------------+--------------+-----------------+-----------------+
+; Pin            ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++----------------+--------------+-----------------+-----------------+
+; reset          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; saldo_atual[0] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; saldo_atual[1] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; saldo_atual[2] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; saldo_atual[3] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; saldo_atual[4] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; saldo_atual[5] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; saldo_atual[6] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; saldo_atual[7] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; valor_saque[7] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; valor_saque[6] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; valor_saque[5] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; valor_saque[4] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; valor_saque[3] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; valor_saque[2] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; valor_saque[1] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; valor_saque[0] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; iniciar_saque  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clk            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_NCSO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++----------------+--------------+-----------------+-----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin             ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; saque_concluido ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; novo_saldo[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.34 V              ; -0.00668 V          ; 0.218 V                              ; 0.076 V                              ; 1.92e-09 s                  ; 1.81e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.34 V             ; -0.00668 V         ; 0.218 V                             ; 0.076 V                             ; 1.92e-09 s                 ; 1.81e-09 s                 ; No                        ; Yes                       ;
+; novo_saldo[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; novo_saldo[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; novo_saldo[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; novo_saldo[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.4 V               ; -0.00557 V          ; 0.238 V                              ; 0.014 V                              ; 2.9e-10 s                   ; 3.48e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.4 V              ; -0.00557 V         ; 0.238 V                             ; 0.014 V                             ; 2.9e-10 s                  ; 3.48e-10 s                 ; No                        ; Yes                       ;
+; novo_saldo[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.4 V               ; -0.00557 V          ; 0.238 V                              ; 0.014 V                              ; 2.9e-10 s                   ; 3.48e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.4 V              ; -0.00557 V         ; 0.238 V                             ; 0.014 V                             ; 2.9e-10 s                  ; 3.48e-10 s                 ; No                        ; Yes                       ;
+; novo_saldo[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; novo_saldo[7]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.34 V              ; -0.00668 V          ; 0.218 V                              ; 0.076 V                              ; 1.92e-09 s                  ; 1.81e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.34 V             ; -0.00668 V         ; 0.218 V                             ; 0.076 V                             ; 1.92e-09 s                 ; 1.81e-09 s                 ; No                        ; Yes                       ;
+; ~ALTERA_NCEO~   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.76e-09 V                   ; 2.4 V               ; -0.034 V            ; 0.102 V                              ; 0.065 V                              ; 2.49e-10 s                  ; 3.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.76e-09 V                  ; 2.4 V              ; -0.034 V           ; 0.102 V                             ; 0.065 V                             ; 2.49e-10 s                 ; 3.49e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.94e-09 V                   ; 2.39 V              ; -0.0344 V           ; 0.156 V                              ; 0.089 V                              ; 2.68e-10 s                  ; 2.6e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.94e-09 V                  ; 2.39 V             ; -0.0344 V          ; 0.156 V                             ; 0.089 V                             ; 2.68e-10 s                 ; 2.6e-10 s                  ; Yes                       ; Yes                       ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin             ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; saque_concluido ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; novo_saldo[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.33 V              ; -0.00286 V          ; 0.193 V                              ; 0.042 V                              ; 2.32e-09 s                  ; 2.21e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.33 V             ; -0.00286 V         ; 0.193 V                             ; 0.042 V                             ; 2.32e-09 s                 ; 2.21e-09 s                 ; Yes                       ; Yes                       ;
+; novo_saldo[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; novo_saldo[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; novo_saldo[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; novo_saldo[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.36 V              ; -0.00623 V          ; 0.121 V                              ; 0.03 V                               ; 4.4e-10 s                   ; 4.28e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.36 V             ; -0.00623 V         ; 0.121 V                             ; 0.03 V                              ; 4.4e-10 s                  ; 4.28e-10 s                 ; Yes                       ; Yes                       ;
+; novo_saldo[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.36 V              ; -0.00623 V          ; 0.121 V                              ; 0.03 V                               ; 4.4e-10 s                   ; 4.28e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.36 V             ; -0.00623 V         ; 0.121 V                             ; 0.03 V                              ; 4.4e-10 s                  ; 4.28e-10 s                 ; Yes                       ; Yes                       ;
+; novo_saldo[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; novo_saldo[7]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.33 V              ; -0.00286 V          ; 0.193 V                              ; 0.042 V                              ; 2.32e-09 s                  ; 2.21e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.33 V             ; -0.00286 V         ; 0.193 V                             ; 0.042 V                             ; 2.32e-09 s                 ; 2.21e-09 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.93e-07 V                   ; 2.37 V              ; -0.0278 V           ; 0.106 V                              ; 0.115 V                              ; 2.69e-10 s                  ; 4.05e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.93e-07 V                  ; 2.37 V             ; -0.0278 V          ; 0.106 V                             ; 0.115 V                             ; 2.69e-10 s                 ; 4.05e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.76e-07 V                   ; 2.36 V              ; -0.00439 V          ; 0.088 V                              ; 0.007 V                              ; 4.05e-10 s                  ; 3.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.76e-07 V                  ; 2.36 V             ; -0.00439 V         ; 0.088 V                             ; 0.007 V                             ; 4.05e-10 s                 ; 3.35e-10 s                 ; Yes                       ; Yes                       ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin             ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; saque_concluido ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; novo_saldo[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.65 V              ; -0.0115 V           ; 0.219 V                              ; 0.115 V                              ; 1.64e-09 s                  ; 1.57e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.65 V             ; -0.0115 V          ; 0.219 V                             ; 0.115 V                             ; 1.64e-09 s                 ; 1.57e-09 s                 ; No                        ; Yes                       ;
+; novo_saldo[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; novo_saldo[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; novo_saldo[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; novo_saldo[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.72 V              ; -0.0199 V           ; 0.186 V                              ; 0.027 V                              ; 2.63e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.72 V             ; -0.0199 V          ; 0.186 V                             ; 0.027 V                             ; 2.63e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; novo_saldo[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.72 V              ; -0.0199 V           ; 0.186 V                              ; 0.027 V                              ; 2.63e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.72 V             ; -0.0199 V          ; 0.186 V                             ; 0.027 V                             ; 2.63e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; novo_saldo[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; novo_saldo[7]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.65 V              ; -0.0115 V           ; 0.219 V                              ; 0.115 V                              ; 1.64e-09 s                  ; 1.57e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.65 V             ; -0.0115 V          ; 0.219 V                             ; 0.115 V                             ; 1.64e-09 s                 ; 1.57e-09 s                 ; No                        ; Yes                       ;
+; ~ALTERA_NCEO~   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.06e-08 V                   ; 2.86 V              ; -0.0341 V           ; 0.364 V                              ; 0.046 V                              ; 1.17e-10 s                  ; 2.6e-10 s                   ; No                         ; Yes                        ; 2.62 V                      ; 3.06e-08 V                  ; 2.86 V             ; -0.0341 V          ; 0.364 V                             ; 0.046 V                             ; 1.17e-10 s                 ; 2.6e-10 s                  ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.81e-08 V                   ; 2.72 V              ; -0.0542 V           ; 0.144 V                              ; 0.087 V                              ; 2.55e-10 s                  ; 2.14e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.81e-08 V                  ; 2.72 V             ; -0.0542 V          ; 0.144 V                             ; 0.087 V                             ; 2.55e-10 s                 ; 2.14e-10 s                 ; Yes                       ; Yes                       ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; reset      ; clk      ; 0        ; 8        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; reset      ; clk      ; 0        ; 8        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Recovery Transfers                                                ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; reset      ; clk      ; 9        ; 9        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Removal Transfers                                                 ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; reset      ; clk      ; 9        ; 9        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 18    ; 18   ;
+; Unconstrained Input Port Paths  ; 177   ; 177  ;
+; Unconstrained Output Ports      ; 9     ; 9    ;
+; Unconstrained Output Port Paths ; 33    ; 33   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Feb 04 22:53:48 2025
+Info: Command: quartus_sta saque -c saque
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Warning (335093): TimeQuest Timing Analyzer is analyzing 8 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'saque.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name reset reset
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.130
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.130        -0.959 clk 
+Info (332146): Worst-case hold slack is 0.673
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.673         0.000 clk 
+Info (332146): Worst-case recovery slack is 0.096
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.096         0.000 clk 
+Info (332146): Worst-case removal slack is -0.129
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.129        -1.156 clk 
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.000       -12.000 clk 
+    Info (332119):    -3.000        -3.000 reset 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332140): No fmax paths to report
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.065
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.065        -0.439 clk 
+Info (332146): Worst-case hold slack is 0.645
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.645         0.000 clk 
+Info (332146): Worst-case recovery slack is 0.130
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.130         0.000 clk 
+Info (332146): Worst-case removal slack is -0.131
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.131        -1.179 clk 
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.000       -12.000 clk 
+    Info (332119):    -3.000        -3.000 reset 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.157
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.157        -1.197 clk 
+Info (332146): Worst-case hold slack is 0.853
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.853         0.000 clk 
+Info (332146): Worst-case recovery slack is -0.029
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.029        -0.256 clk 
+Info (332146): Worst-case removal slack is -0.084
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.084        -0.756 clk 
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.000       -12.238 clk 
+    Info (332119):    -3.000        -3.000 reset 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4593 megabytes
+    Info: Processing ended: Tue Feb 04 22:53:52 2025
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

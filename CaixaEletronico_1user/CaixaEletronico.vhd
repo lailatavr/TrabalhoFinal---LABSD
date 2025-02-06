@@ -35,33 +35,16 @@ architecture Behavioral of CaixaEletronico is
 		);
 	end component;
 	 
-	--component Cadastro is
-		--Port (
-        --clk          : in std_logic; 
-        --reset        : in std_logic; 
-        --iniciar      : in std_logic;  
-        --cliente_id   : in integer range 0 to 15; 
-        --login_in     : in std_logic_vector(7 downto 0); 
-        --senha_in     : in std_logic_vector(7 downto 0); 
-        --cadastro_ok  : out std_logic
-		--);
-	--end component;
 	 
 	type tipo_estado is (MENU_INICIAL, LOGIN, CADASTRAR, ERRO_INICIAL, MENU, CONSULTA_SALDO, DEPOSITO, SAQUE, ERRO, LOGOUT);
 	signal estado : tipo_estado;
 	signal conf_pass : std_logic := '0';
 	signal confirma : std_logic;
 	
-	--cadastro
-	signal selecao_cadlog : std_logic;
-	--signal client_id : integer range 0 to 15;
+	--memoria
 	signal in_login : std_logic_vector(7 downto 0);
 	signal in_senha : std_logic_vector(7 downto 0);
-	--signal cadastro_ok : std_logic;
-	--memória
 	signal write_signal : std_logic;
-	--signal read_client_id : integer range 0 to 15;
-	--signal write_client_id : integer range 0 to 15;
 	signal saldo_signal : std_logic_vector(15 downto 0);
 	signal login_mem : std_logic_vector(7 downto 0);
 	signal senha_mem : std_logic_vector(7 downto 0);
@@ -76,8 +59,6 @@ begin
 			clk => clk,
 			reset => reset,
 			write_signal=> write_signal,
-			--read_client => read_client_id,
-			--write_client => write_client_id,
 			login_in => in_login,
 			senha_in => in_senha,
 			saldo_in => saldo_signal,
@@ -85,17 +66,6 @@ begin
 			senha_out => senha_mem,
 			saldo_out => saldo_novo_sig
 		);
-		
-	--cadastro_inst : Cadastro
-		--port map (
-			--clk => clk,
-			--reset => reset,
-			--iniciar => selecao_cadlog,
-			--cliente_id => client_id,
-			--login_in => in_login,
-			--senha_in => in_senha,
-			--cadastro_ok => cadastro_ok
-		--);
 	
 	 --FlipFlop para que a operação só for confirmada quando o botão for pressionado
 	process(clk)

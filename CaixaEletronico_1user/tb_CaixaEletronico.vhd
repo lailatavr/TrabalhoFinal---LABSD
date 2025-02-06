@@ -83,6 +83,7 @@ BEGIN
 		  selecao_inicio <= '0';
 		  confirma_operacao <= '1';
 		  wait for 20 ns;
+		  
 		  --login
         login_in <= "00000001";  
         senha_in <= "00001111";  
@@ -104,24 +105,48 @@ BEGIN
         WAIT FOR 20 ns;
         
 		  -- saque
-        tipo_operacao <= "001";
+        tipo_operacao <= "010";
 		  confirma_operacao <= '0';
         WAIT FOR 20 ns;
 		  confirma_operacao <= '1';
         WAIT FOR 20 ns;
-        valor_operacao <= TO_UNSIGNED(1, 16);
+        valor_operacao <= TO_UNSIGNED(50, 16);
+        confirma_operacao <= '0';
+        WAIT FOR 20 ns;
+		  confirma_operacao <= '1';
+		  WAIT FOR 20 ns;
+		  
+		  -- saque
+        tipo_operacao <= "010";
+		  confirma_operacao <= '0';
+        WAIT FOR 20 ns;
+		  confirma_operacao <= '1';
+        WAIT FOR 20 ns;
+        valor_operacao <= TO_UNSIGNED(60, 16);
+        confirma_operacao <= '0';
+        WAIT FOR 20 ns;
+		  confirma_operacao <= '1';
+		  WAIT FOR 20 ns;
+		  
+		  -- consulta_saldo
+        tipo_operacao <= "000";
+		  confirma_operacao <= '0';
+        WAIT FOR 20 ns;
+		  confirma_operacao <= '1';
+        WAIT FOR 20 ns;
         confirma_operacao <= '0';
         WAIT FOR 20 ns;
 		  confirma_operacao <= '1';
 		  WAIT FOR 20 ns;
 
-		  
-		  tipo_operacao <= "010";
+
+		  --deposito
+		  tipo_operacao <= "001";
 		  confirma_operacao <= '0';
         WAIT FOR 20 ns;
 		  confirma_operacao <= '1';
         WAIT FOR 20 ns;
-		  valor_operacao <= TO_UNSIGNED(1, 16);
+		  valor_operacao <= TO_UNSIGNED(100, 16);
         confirma_operacao <= '0';
         WAIT FOR 20 ns;
 		  confirma_operacao <= '1';
@@ -140,5 +165,3 @@ BEGIN
         WAIT;
     END PROCESS;
 END testbench;
-
-
